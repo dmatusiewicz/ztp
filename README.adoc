@@ -1,16 +1,16 @@
-# Refactoring – ZTP
+# Zawansowane Techniki Programowania – ZTP, 17/18
 
-ZTP = zaawansowane techniki programowania, 17/18.
 
 Literatura dla języków obiektowych.
 
 . Refactoring https://martinfowler.com/books/refactoringRubyEd.html[Ruby Edition],
   https://martinfowler.com/books/refactoring.html[Java Edition]
+. http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm#format/e[Czysty kod. Podręcznik dobrego programisty] (ebook)
 
 Narzędzia:
 
-. linters
+. inters
 . static code analyzers & style guides (https://github.com/bbatsov/rubocop[rubocop])
+. code smell detectors (and brothers & sisters)
+.. https://github.com/troessner/reek[reek] (for Ruby language)
 . edytory (https://atom.io[Atom])
-
-Co to jest **code smell**?
