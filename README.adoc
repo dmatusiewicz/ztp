@@ -1,6 +1,5 @@
 # Zawansowane Techniki Programowania – ZTP, 17/18
 
-
 Literatura dla języków obiektowych.
 
 . Refactoring https://martinfowler.com/books/refactoringRubyEd.html[Ruby Edition],
@@ -9,8 +8,9 @@ Literatura dla języków obiektowych.
 
 Narzędzia:
 
-. inters
-. static code analyzers & style guides (https://github.com/bbatsov/rubocop[rubocop])
+. linters
 . code smell detectors (and brothers & sisters)
 .. https://github.com/troessner/reek[reek] (for Ruby language)
-. edytory (https://atom.io[Atom])
+.. https://github.com/bbatsov/rubocop[rubocop] – static code analyzer & style guide
+. edytory
+.. https://atom.io[Atom]
