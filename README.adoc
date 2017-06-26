@@ -14,3 +14,22 @@ Narzędzia:
 .. https://github.com/bbatsov/rubocop[rubocop] – static code analyzer & style guide
 . Editors
 .. https://atom.io[Atom]
+
+## Refactoring
+
+Kod po refactoringu łatwiej zrozumieć i rozszerzać
+(szybciej piszemy zaawansowany kod, robimy mniej błędów).
+
+Jak?
+
+. Usuwamy nadmiarowy kod.
+. W trakcie refactoringu zmienia się nasze rozumienie cudzego kodu.
+. Nie musimy pamiętać co stary kod robił.
+. Piszemy kod szybciej.
+
+Clean code & bad smells.
+
+. Common design problems.
+. Unclear, duplicated, or unnecessary complicated code.
+
+Przykłady: https://github.com/troessner/reek[Code smell detector for Ruby].
