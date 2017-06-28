@@ -32,4 +32,16 @@ Clean code & bad smells.
 . Common design problems.
 . Unclear, duplicated, or unnecessary complicated code.
 
-Przykłady: https://github.com/troessner/reek[Code smell detector for Ruby].
+https://github.com/troessner/reek[Code smell detector for Ruby].
+
+Przykład.
+
+```ruby
+# Smelly class
+class Smelly
+  # This will reek of UncommunicativeMethodName
+  def x
+    y = 10 # This will reek of UncommunicativeVariableName
+  end
+end
+```
