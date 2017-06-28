@@ -1,4 +1,4 @@
-# Zawansowane Techniki Programowania – ZTP, 17/18
+# Zawansowane Języki Programowania, 17/18
 
 Literatura dla języków obiektowych.
 
@@ -15,7 +15,7 @@ Narzędzia:
 . Editors
 .. https://atom.io[Atom]
 
-## Refactoring
+## Refactoring (techniki)
 
 Kod po refactoringu łatwiej zrozumieć i rozszerzać
 (szybciej piszemy zaawansowany kod, robimy mniej błędów).
