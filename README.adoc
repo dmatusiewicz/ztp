@@ -32,9 +32,8 @@ Clean code & bad smells.
 . Common design problems.
 . Unclear, duplicated, or unnecessary complicated code.
 
+Przykład z biblioteki
 https://github.com/troessner/reek[Code smell detector for Ruby].
-
-Przykład.
 
 ```ruby
 # Smelly class
