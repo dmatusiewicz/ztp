@@ -2,7 +2,7 @@
 
 Literatura:
 
-. Greg Young, [The art of destroying software](https://vimeo.com/108441214/description?__s=jvsvsq3unktoidfpqwzm) (Vimeo)
+. Greg Young, https://vimeo.com/108441214/description?__s=jvsvsq3unktoidfpqwzm[The art of destroying software] (Vimeo)
 . Refactoring https://martinfowler.com/books/refactoringRubyEd.html[Ruby Edition],
   https://martinfowler.com/books/refactoring.html[Java Edition]
 . http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm#format/e[Czysty kod. Podręcznik dobrego programisty] (ebook)
