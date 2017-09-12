@@ -15,6 +15,13 @@ Narzędzia:
 . Editors
 .. https://atom.io[Atom]
 
+Różne:
+
+. https://parkji.co.uk/2013/07/06/building-a-static-site-using-grunt-and-assemble.html[Building a basic static site using grunt and assemble]
+
+NOTE: Use *gulp* and https://github.com/asciidoctor/gulp-asciidoctor[gulp-asciidoctor] instead.
+
+
 ## Refactoring (techniki)
 
 Kod po refactoringu łatwiej zrozumieć i rozszerzać
