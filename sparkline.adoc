@@ -1,0 +1,35 @@
+= Sparklines
+
+:icons: font
+
+- Redo `sparkline.rb` with http://aftertheflood.co/projects/atf-spark[AtF Spark font].
+- http://asciidoctor.org/docs/asciidoc-writers-guide/#a-new-perspective-on-tables[AsciiDoc Writer’s Guide]
+
+IMPORTANT: Source code with callouts.
+
+[source,ruby]
+----
+require 'asciidoctor'  # <1>
+
+Asciidoctor.convert_file 'mysample.adoc'  # <2>
+----
+<1> Imports the library
+<2> Reads, parses and renders the file
+
+
+== Refactoring sparklines with AtF Font
+
+IMPORTANT: Move this section to separate file.
+
+Code block with title and syntax highlighting.
+
+.app.rb
+[[src-listing]]
+[source,ruby]
+----
+require 'sinatra'
+
+get '/hi' do
+  "Hello World!"
+end
+----
