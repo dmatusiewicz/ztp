@@ -1,5 +1,7 @@
 # Zawansowane Języki Programowania, 17/18
 
+:icons: font
+
 Literatura dla języków obiektowych.
 
 . Refactoring https://martinfowler.com/books/refactoringRubyEd.html[Ruby Edition],
