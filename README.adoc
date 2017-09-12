@@ -58,3 +58,14 @@ smelly.rb -- 2 warnings:
 image::images/NSFWPocketGuideFilled_mini.jpg[The Pocket Guide to Bullshit Prevention, 480]
 
 Source: http://www.lastwordonnothing.com/2014/04/29/the-pocket-guide-to-bullshit-prevention/[The Pocket Guide to Bullshit Prevention] by Michelle Nijhuis
+
+Więcej przykładowych programów z http://exercism.io[exercism].
+
+```sh
+exercism list ruby
+exercism fetch ruby hello-world
+```
+
+TODO:
+
+- [ ] Krótkie wprowadzenie do MiniTest (?RSpec).
