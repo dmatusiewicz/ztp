@@ -1,8 +1,7 @@
-# Zaawansowane Języki Programowania, 2017/18
+# Zawansowane Języki Programowania, 17/18
 
-Literatura:
+Literatura dla języków obiektowych.
 
-. Greg Young, https://vimeo.com/108441214/description?__s=jvsvsq3unktoidfpqwzm[The art of destroying software] (Vimeo)
 . Refactoring https://martinfowler.com/books/refactoringRubyEd.html[Ruby Edition],
   https://martinfowler.com/books/refactoring.html[Java Edition]
 . http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm#format/e[Czysty kod. Podręcznik dobrego programisty] (ebook)
@@ -56,17 +55,9 @@ smelly.rb -- 2 warnings:
   [5]:UncommunicativeVariableName: Smelly#x has the variable name 'y' [https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md]
 ```
 
-image::images/NSFWPocketGuideFilled_mini.jpg[The Pocket Guide to Bullshit Prevention, 480]
-
-Source: http://www.lastwordonnothing.com/2014/04/29/the-pocket-guide-to-bullshit-prevention/[The Pocket Guide to Bullshit Prevention] by Michelle Nijhuis
-
 Więcej przykładowych programów z http://exercism.io[exercism].
 
 ```sh
 exercism list ruby
 exercism fetch ruby hello-world
 ```
-
-TODO:
-
-- [ ] Krótkie wprowadzenie do MiniTest (?RSpec).
