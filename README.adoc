@@ -29,7 +29,7 @@ Różne
 NOTE: Use *gulp* and https://github.com/asciidoctor/gulp-asciidoctor[gulp-asciidoctor] instead.
 
 
-## Refactoring (techniki)
+## Refactoring
 
 Kod po refactoringu łatwiej zrozumieć i rozszerzać
 (szybciej piszemy zaawansowany kod, robimy mniej błędów).
