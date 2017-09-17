@@ -61,7 +61,7 @@ class Smelly
 end
 ```
 
-Automatyczne wyszukiwanie code smells za pomocą programu _reek_.
+Automatyczne wyszukiwanie code smells w pliku za pomocą programu _reek_.
 
 ```sh
 reek smelly.rb
