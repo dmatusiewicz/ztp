@@ -41,7 +41,9 @@ Jak?
 . Nie musimy pamiętać co stary kod robił.
 . Piszemy kod szybciej.
 
-Clean code & bad smells.
+## Code smells ➨ Refactoring
+
+Examples
 
 . Common design problems.
 . Unclear, duplicated, or unnecessary complicated code.
