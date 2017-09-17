@@ -2,14 +2,14 @@
 
 :icons: font
 
-Literatura dla języków obiektowych.
+Literatura
 
 . Greg Young, https://vimeo.com/108441214/description?__s=jvsvsq3unktoidfpqwzm[The art of destroying software], Vimeo
 . Refactoring https://martinfowler.com/books/refactoringRubyEd.html[Ruby Edition],
   https://martinfowler.com/books/refactoring.html[Java Edition]
 . http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm#format/e[Czysty kod. Podręcznik dobrego programisty] (ebook)
 
-Narzędzia:
+Narzędzia
 
 . Linters
 . Code smell detectors (and brothers & sisters)
@@ -18,11 +18,11 @@ Narzędzia:
 . Editors
 .. https://atom.io[Atom]
 
-Quizzes:
+Quizzes
 
 . http://www.codequizzes.com/ruby[Learn Ruby]
 
-Różne:
+Różne
 
 . https://parkji.co.uk/2013/07/06/building-a-static-site-using-grunt-and-assemble.html[Building a basic static site using grunt and assemble]
 
