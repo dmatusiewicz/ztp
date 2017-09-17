@@ -18,10 +18,6 @@ Narzędzia
 . Editors
 .. https://atom.io[Atom]
 
-Quizzes
-
-. http://www.codequizzes.com/ruby[Learn Ruby]
-
 Różne
 
 . https://parkji.co.uk/2013/07/06/building-a-static-site-using-grunt-and-assemble.html[Building a basic static site using grunt and assemble]
@@ -41,15 +37,19 @@ Jak?
 . Nie musimy pamiętać co stary kod robił.
 . Piszemy kod szybciej.
 
+An refactoring example: _Hide Delegate_.
+
+
 ## Code smells ➨ Refactoring
 
-Examples
+Code smell suggest refactoring. Examples of code smells:
 
-. Common design problems.
-. Unclear, duplicated, or unnecessary complicated code.
+. Move Method, Extract Class, Move Field, Extract Method
 
-Przykład z biblioteki
-https://github.com/troessner/reek[Code smell detector for Ruby].
+Quite a few refactorings are not mentioned by any of the smells
+(unclear, duplicated, or unnecessary complicated code).
+
+Przykład z https://github.com/troessner/reek[Code smell detector for Ruby].
 
 ```ruby
 # Smelly class
@@ -61,6 +61,8 @@ class Smelly
 end
 ```
 
+Automatyczne wyszukiwanie code smells za pomocą programu _reek_.
+
 ```sh
 reek smelly.rb
 Inspecting 1 file(s):
@@ -71,7 +73,10 @@ smelly.rb -- 2 warnings:
   [5]:UncommunicativeVariableName: Smelly#x has the variable name 'y' [https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md]
 ```
 
-Więcej przykładowych programów z http://exercism.io[exercism].
+Więcej przykładowych programów do wybróbowania programu _reek_ można
+znależć na http://www.codequizzes.com/ruby[Learn Ruby].
+
+Można też spróbować swoich sił na zadaniach z portalu http://exercism.io[Exercism].
 
 ```sh
 exercism list ruby
