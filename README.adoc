@@ -43,9 +43,12 @@ Code smell suggest refactoring. Examples of code smells:
 Quite a few refactorings are not mentioned by any of the smells
 (unclear, duplicated, or unnecessary complicated code).
 
-Przykład z https://github.com/troessner/reek[Code smell detector for Ruby].
+Automatyczne wyszukiwanie code smells w pliku za pomocą programu _reek_ –
+https://github.com/troessner/reek[Code smell detector for Ruby].
 
-```ruby
+.smelly.rb
+[source,ruby]
+----
 # Smelly class
 class Smelly
   # This will reek of UncommunicativeMethodName
@@ -53,9 +56,7 @@ class Smelly
     y = 10 # This will reek of UncommunicativeVariableName
   end
 end
-```
-
-Automatyczne wyszukiwanie code smells w pliku za pomocą programu _reek_.
+----
 
 ```sh
 reek smelly.rb
@@ -67,7 +68,7 @@ smelly.rb -- 2 warnings:
   [5]:UncommunicativeVariableName: Smelly#x has the variable name 'y' [https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md]
 ```
 
-Więcej przykładowych programów do wybróbowania programu _reek_ można
+Więcej przykładowych programów do wybróbowania z programem _reek_ można
 znależć na http://www.codequizzes.com/ruby[Learn Ruby].
 
 Można też spróbować swoich sił na zadaniach z portalu http://exercism.io[Exercism].
