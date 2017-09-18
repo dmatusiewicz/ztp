@@ -19,7 +19,12 @@ Narzędzia
 .. https://atom.io[Atom]
 
 
-## Refactoring (TODO)
+## Refactoring
+
+Refactoring jest techniką bezpiecznego udoskonalania *istniejącego kodu*.
+Innymi słowami, refactoring to taki proces poprawiania kodu
+w trakcie którego nie jest zmieniane jego działanie ale
+jest udoskonalana jego wewnętrzna struktura. 
 
 Kod po refactoringu łatwiej zrozumieć i rozszerzać
 (szybciej piszemy zaawansowany kod, robimy mniej błędów).
