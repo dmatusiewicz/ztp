@@ -1,5 +1,6 @@
 # Zawansowane Języki Programowania, 17/18
 
+:source-highlighter: coderay
 :icons: font
 
 Literatura
