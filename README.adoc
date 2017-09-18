@@ -19,6 +19,18 @@ Narzędzia
 . Editors
 .. https://atom.io[Atom]
 
+## The TDD/BDD micro-process
+
+|===
+| RED        | Write a new test and see it fail.
+| GREEN      | Get all tests passing, using the most naive approach you can see.
+| *REFACTOR* | Transition to the simplest design that passes the current tests,
+               by removing any introduced smells.
+| repeat     | Go around again.
+|===
+
+TODO: Insert picture HERE.
+
 
 ## Refactoring
 
