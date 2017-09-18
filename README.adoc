@@ -19,7 +19,7 @@ Narzędzia
 . Editors
 .. https://atom.io[Atom]
 
-## The TDD/BDD micro-process
+## The BDD micro-process
 
 |===
 | RED        | Write a new test and see it fail.
