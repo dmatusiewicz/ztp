@@ -56,6 +56,11 @@ while the design can be simplified
   check that tests still pass
 ```
 
+IMPORTANT: This approach to refactoring does not guarantee to
+get the ideal design, because you can not reach a global
+maximum by looking at local properties.
+
+
 ## A refactoring example – _Hide Delegate_
 
 TODO
