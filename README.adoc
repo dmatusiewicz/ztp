@@ -23,8 +23,8 @@ Narzędzia
 
 Refactoring jest techniką bezpiecznego udoskonalania *istniejącego kodu*.
 Innymi słowami, w trakcie refactoringu poprawiamy kod
-nie zmieniając jego działania, ale udoskonalamy jego wewnętrzną 
-strukturę. 
+nie zmieniając jego działania, ale udoskonalamy jego wewnętrzną
+strukturę.
 
 Dlatego kod po refactoringu łatwiej jest zrozumieć i rozszerzać
 (szybciej piszemy nowy kod i robimy mniej błędów).
@@ -56,7 +56,7 @@ while the design can be simplified
   check that tests still pass
 ```
 
-IMPORTANT: This approach to refactoring does not guarantee to
+NOTE: This approach to refactoring does not guarantee to
 get the ideal design, because you can not reach a global
 maximum by looking at local properties.
 
