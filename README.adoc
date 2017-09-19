@@ -98,7 +98,7 @@ while the design can be simplified
   choose the worst smell
   select a refactoring that will address the smell
   apply the refactoring
-  check that tests still pass
+  (check that tests still pass)
 ```
 
 NOTE: This approach to refactoring does not guarantee to
