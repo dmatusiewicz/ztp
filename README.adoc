@@ -19,6 +19,7 @@ Narzędzia
 . Code smell detectors (and brothers & sisters)
 .. https://github.com/troessner/reek[reek] (for Ruby language)
 .. https://github.com/bbatsov/rubocop[rubocop] – static code analyzer & style guide
+.. https://github.com/seattlerb/flay[Flay] – analyzes code for structural similarities
 . Editors
 .. https://atom.io[Atom]
 
