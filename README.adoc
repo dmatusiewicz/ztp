@@ -22,9 +22,6 @@ Narzędzia
 . Editors
 .. https://atom.io[Atom]
 
-```
-pygmentize -L styles
-```
 
 ## The BDD micro-process
 
@@ -57,12 +54,40 @@ W trakcie refactoringu:
 
 ### Code smells ➨ Refactoring
 
-Code smells suggest refactorings. Examples of code smells:
+Code smells suggest refactorings.
+
+Probably, these refactorings are responsible for fixing the most smells:
 
 . Move Method, Extract Class, Move Field, Extract Method
 
-Quite a few refactorings are not mentioned by any of the smells
-(unclear, duplicated, or unnecessary complicated code).
+Quite a few refactorings are not mentioned by any of the smells.
+
+[cols="25,75"]
+|===
+^| Code Smell   ^| Refactorings
+
+2+^e| Names
+
+| Type Embeded in Name | Rename Method (or constant etc.)
+| Uncommunicative Name | j.w.
+| Inconsistent Name    | j.w.
+
+2+^e| Duplication
+
+| Dervived Value  |
+| Repeated Value  |
+| Duplicated Code |
+
+2+^e| Responsibility
+
+| Feature Envy           | Extract Method, Move Method, see Utility Function
+| Utility Function       | Extract Class
+| Global Variable        | Add Parameter
+| Inappropriate Intimacy |
+| Message Chain          |
+| Middle Man             |
+| Greedy Module          |
+|===
 
 
 ### The refactoring cycle
