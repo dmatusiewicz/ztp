@@ -1,6 +1,9 @@
 # Zawansowane Języki Programowania, 17/18
 
-:source-highlighter: coderay
+:experimental:
+:imagesdir: ./images
+:source-highlighter: pygments
+:pygments-style: github
 :icons: font
 
 Literatura
@@ -18,6 +21,10 @@ Narzędzia
 .. https://github.com/bbatsov/rubocop[rubocop] – static code analyzer & style guide
 . Editors
 .. https://atom.io[Atom]
+
+```
+pygmentize -L styles
+```
 
 ## The BDD micro-process
 
