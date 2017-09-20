@@ -40,10 +40,9 @@ ____
 
 {nbsp}
 
-The classes we create will affect how we think about your
-application *forever*. So, how to create classes to allow
-for easy changes.
+So, how to create classes to allow for easy changes?
 
+// The classes we create will affect how we think about your application *forever*.
 // We will never know less than we know right now.
 
 
