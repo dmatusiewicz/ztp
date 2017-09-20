@@ -60,8 +60,12 @@ ____
 | _repeat_   |
 |===
 
+[caption=""]
+.Quantum point of view on programming
+image::bdd_mini.jpg[Quantum point of view on programming, 600, 600]
 
-image::bdd_mini.jpg[Quantum view on programming, 600, 600]
+Programmer State Attention Exclusion Principle:: A programmer
+attentions should not occupy different states simultaneously.
 
 
 ## Refactor
