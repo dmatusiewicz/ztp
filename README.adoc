@@ -61,7 +61,7 @@ ____
 |===
 
 
-image::bdd_mini.jpg[Quantum view on programming, 680]
+image::bdd_mini.jpg[Quantum view on programming, 600, 600]
 
 
 ## Refactor
