@@ -26,26 +26,25 @@ Narzędzia
 
 ## Object Oriented Design
 
+The foundation of an object-oriented system is the *message*,
+but the most visible organizational structure
+in a a class-based OO language (Ruby) is the *class*.
+
 [quote, S. Metz, Practical Object Oriented Design in Ruby]
 ____
 If your application succeeds many of the decisions you
 make today will need to be changed later. […] +
-You will never know less than you know right now. […] +
-Design is more the art of preserving changeability
+Design is more the art of *preserving changeability*
 than it is the act of achieving perfection.
 ____
 
-So we should organize code to allow for easy changes.
+{nbsp}
 
-❖
+The classes we create will affect how we think about your
+application *forever*. So, how to create classes to allow
+for easy changes.
 
-The foundation of an object-oriented system is the *message*,
-but the most visible organizational structure
-in a a class-based OO language (Ruby) is the *class*.
-The classes you create will affect how you think about your
-application *forever*.
-
-Q: How to create classes to allow for easy changes?
+// We will never know less than we know right now.
 
 
 ## The BDD micro-process
