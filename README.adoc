@@ -43,10 +43,14 @@ ____
 So, how to create classes to allow for easy changes?
 
 // The classes we create will affect how we think about your application *forever*.
-// We will never know less than we know right now.
 
 
 ### The BDD micro-process
+
+[quote]
+____
+We will never know less than we know right now.
+____
 
 |===
 | RED        | Write a new test and see it fail.
