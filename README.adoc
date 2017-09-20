@@ -46,7 +46,7 @@ So, how to create classes to allow for easy changes?
 // We will never know less than we know right now.
 
 
-## The BDD micro-process
+### The BDD micro-process
 
 |===
 | RED        | Write a new test and see it fail.
