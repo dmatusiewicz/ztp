@@ -24,6 +24,30 @@ Narzędzia
 .. https://atom.io[Atom]
 
 
+## Object Oriented Design
+
+[quote, S. Metz, Practical Object Oriented Design in Ruby]
+____
+If your application succeeds many of the decisions you
+make today will need to be changed later. […] +
+You will never know less than you know right now. […] +
+Design is more the art of preserving changeability
+than it is the act of achieving perfection.
+____
+
+So we should organize code to allow for easy changes.
+
+❖
+
+The foundation of an object-oriented system is the *message*,
+but the most visible organizational structure
+in a a class-based OO language (Ruby) is the *class*.
+The classes you create will affect how you think about your
+application *forever*.
+
+Q: How to create classes to allow for easy changes?
+
+
 ## The BDD micro-process
 
 |===
@@ -34,10 +58,11 @@ Narzędzia
 | repeat     | Go around again.
 |===
 
+
 TODO: Insert picture HERE.
 
 
-## Refactoring
+## Refactor
 
 Refactoring to technika bezpiecznego udoskonalania *istniejącego kodu*.
 Innymi słowami, w trakcie refactoringu poprawiamy kod udoskonalając jego
