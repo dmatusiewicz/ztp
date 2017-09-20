@@ -75,20 +75,19 @@ Dlatego kod po refactoringu jest łatwiejszy w zrozumieniu
 i łatwiej go rozszerzać (szybciej piszemy nowy kod i robimy mniej błędów).
 
 
-## Code smells ➨ Refactoring
+### A refactoring example – _Hide Delegate_
+
+TODO
+
+
+## Code smells ➨ Refactor
 
 Code smells suggest refactorings.
-
-Probably, these refactorings are responsible for fixing the most smells:
-
-. Move Method, Extract Class, Move Field, Extract Method
-
-WARNING: Quite a few refactorings are not mentioned by any of the smells.
 
 [cols=">10s,25,65", options="header", caption=""]
 .Code Smells, Refactoring in Ruby by W. C. Wake & K. Rutherford
 |===
-| # ^| Code Smell   ^| Refactorings
+^| # ^| Code Smell   ^| Refactorings
 
 | 2+^e| Accommodating Change
 | 2+^e| Conditional Logic
@@ -115,29 +114,33 @@ WARNING: Quite a few refactorings are not mentioned by any of the smells.
 | 2+^e| Unnecessary Complexity
 |===
 
+NOTE: Probably, these refactorings are responsible for fixing the most
+smells: Move Method, Extract Class, Move Field, Extract Method
 
-.The refactoring cycle.
-```
+WARNING: Quite a few refactorings are not mentioned by any
+of the smells.
+
+
+## The refactoring cycle
+
+[verse]
 start with working (tested) code
 while the design can be simplified
   choose the worst smell
   select a refactoring that will address the smell
   apply the refactoring
   (check that tests still pass)
-```
 
-NOTE: This approach to refactoring does not guarantee to
+
+IMPORTANT: This approach to refactoring does not guarantee to
 get the ideal design, because you can not reach a global
 maximum by looking at local properties.
 
 
-## A refactoring example – _Hide Delegate_
+## Automatyczne wyszukiwanie code smells w kodzie
 
-TODO
-
-## Wyszukiwanie code smells w kodzie
-
-Automatyczne wyszukiwanie code smells w pliku za pomocą programu _reek_ –
+Przykład automatycznego wyszukiwania code smells w pliku
+za pomocą programu _reek_ –
 https://github.com/troessner/reek[Code smell detector for Ruby].
 
 .smelly.rb
@@ -161,6 +164,8 @@ smelly.rb -- 2 warnings:
   [4]:UncommunicativeMethodName: Smelly#x has the name 'x' [https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Method-Name.md]
   [5]:UncommunicativeVariableName: Smelly#x has the variable name 'y' [https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md]
 ```
+
+### TODO
 
 Więcej przykładowych programów do wybróbowania z programem _reek_ można
 znależć na http://www.codequizzes.com/ruby[Learn Ruby].
