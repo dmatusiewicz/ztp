@@ -230,7 +230,7 @@ smelly.rb -- 2 warnings:
   [5]:UncommunicativeVariableName: Smelly#x has the variable name 'y' [https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md]
 ```
 
-### TODO
+### Exercises to try – Smell of the Week
 
 Więcej przykładowych programów do wybróbowania z programem _reek_ można
 znależć na http://www.codequizzes.com/ruby[Learn Ruby].
