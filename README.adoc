@@ -58,7 +58,8 @@ Probably, these refactorings are responsible for fixing the most smells:
 
 Quite a few refactorings are not mentioned by any of the smells.
 
-[cols=">10s,25,65", options="header"]
+[cols=">10s,25,65", options="header", caption=""]
+.Code Smells, Refactoring in Ruby by W. C. Wake & K. Rutherford
 |===
 | # ^| Code Smell   ^| Refactorings
 
