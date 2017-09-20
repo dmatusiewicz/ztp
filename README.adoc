@@ -123,6 +123,7 @@ of the smells.
 
 ## The refactoring cycle
 
+.Source: Refactoring in Ruby by W. C. Wake & K. Rutherford
 [verse]
 start with working (tested) code
 while the design can be simplified
