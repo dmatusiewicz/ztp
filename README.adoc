@@ -49,7 +49,7 @@ So, how to create classes to allow for easy changes?
 
 [quote]
 ____
-We will never know less than we know right now.
+You will never know less than you know right now.
 ____
 
 |===
