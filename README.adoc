@@ -39,18 +39,13 @@ TODO: Insert picture HERE.
 
 ## Refactoring
 
-Refactoring jest techniką bezpiecznego udoskonalania *istniejącego kodu*.
-Innymi słowami, w trakcie refactoringu poprawiamy kod
-nie zmieniając jego działania, ale udoskonalamy jego wewnętrzną
-strukturę.
+Refactoring to technika bezpiecznego udoskonalania *istniejącego kodu*.
+Innymi słowami, w trakcie refactoringu poprawiamy kod udoskonalając jego
+wewnętrzną strukturę i nie zmieniając jego działania.
 
-Dlatego kod po refactoringu łatwiej jest zrozumieć i rozszerzać
-(szybciej piszemy nowy kod i robimy mniej błędów).
-
-W trakcie refactoringu:
-. usuwamy nadmiarowy kod
-. zmienia się nasze rozumienie cudzego kodu
-. nie musimy pamiętać co stary kod robił
+W trakcie refactoringu zmienia się nasze rozumienie cudzego kodu
+Dlatego kod po refactoringu łatwiej jest łatwiejszy w zrozumieniu,
+łatwiej go rozszerzać (szybciej piszemy nowy kod i robimy mniej błędów).
 
 
 ### Code smells ➨ Refactoring
@@ -63,31 +58,33 @@ Probably, these refactorings are responsible for fixing the most smells:
 
 Quite a few refactorings are not mentioned by any of the smells.
 
-[cols="25,75"]
+[cols=">10s,25,65", options="header"]
 |===
-^| Code Smell   ^| Refactorings
+| # ^| Code Smell   ^| Refactorings
 
-2+^e| Names
-
-| Type Embeded in Name | Rename Method (or constant etc.)
-| Uncommunicative Name | j.w.
-| Inconsistent Name    | j.w.
-
-2+^e| Duplication
-
-| Dervived Value  |
-| Repeated Value  |
-| Duplicated Code |
-
-2+^e| Responsibility
-
-| Feature Envy           | Extract Method, Move Method, see Utility Function
-| Utility Function       | Extract Class
-| Global Variable        | Add Parameter
-| Inappropriate Intimacy |
-| Message Chain          |
-| Middle Man             |
-| Greedy Module          |
+| 2+^e| Accommodating Change
+| 2+^e| Conditional Logic
+| 2+^e| Data
+| 2+^e| Duplication
+|     | Dervived Value  |
+|     | Duplicated Code |
+| 2+^e| Inheritance
+|     | Repeated Value  |
+| 2+^e| Libraries
+| 2+^e| Measurable Smells
+| 2+^e| Names
+|     | Inconsistent Name    | j.w.
+|     | Type Embeded in Name | Rename Method (or constant etc.)
+|     | Uncommunicative Name | j.w.
+| 2+^e| Responsibility
+|   1 | Feature Envy           | Extract Method, Move Method, see Utility Function
+|   2 | Global Variable        | Add Parameter
+|     | Greedy Module          |
+|     | Inappropriate Intimacy |
+|     | Message Chain          |
+|     | Middle Man             |
+|   2 | Utility Function       | Extract Class
+| 2+^e| Unnecessary Complexity
 |===
 
 
