@@ -57,7 +57,7 @@ ____
 | GREEN      | Get all tests passing, using the most naive approach you can see.
 | *REFACTOR* | Transition to the simplest design that passes the current tests,
                by removing any introduced smells.
-| repeat     | Go around again.
+| _repeat_   |
 |===
 
 
