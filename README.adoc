@@ -71,11 +71,11 @@ Innymi słowami, w trakcie refactoringu poprawiamy kod udoskonalając jego
 wewnętrzną strukturę i nie zmieniając jego działania.
 
 W trakcie refactoringu zmienia się nasze rozumienie cudzego kodu
-Dlatego kod po refactoringu łatwiej jest łatwiejszy w zrozumieniu,
-łatwiej go rozszerzać (szybciej piszemy nowy kod i robimy mniej błędów).
+Dlatego kod po refactoringu jest łatwiejszy w zrozumieniu
+i łatwiej go rozszerzać (szybciej piszemy nowy kod i robimy mniej błędów).
 
 
-### Code smells ➨ Refactoring
+## Code smells ➨ Refactoring
 
 Code smells suggest refactorings.
 
@@ -83,7 +83,7 @@ Probably, these refactorings are responsible for fixing the most smells:
 
 . Move Method, Extract Class, Move Field, Extract Method
 
-Quite a few refactorings are not mentioned by any of the smells.
+WARNING: Quite a few refactorings are not mentioned by any of the smells.
 
 [cols=">10s,25,65", options="header", caption=""]
 .Code Smells, Refactoring in Ruby by W. C. Wake & K. Rutherford
@@ -116,8 +116,7 @@ Quite a few refactorings are not mentioned by any of the smells.
 |===
 
 
-### The refactoring cycle
-
+.The refactoring cycle.
 ```
 start with working (tested) code
 while the design can be simplified
