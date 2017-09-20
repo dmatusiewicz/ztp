@@ -61,8 +61,8 @@ ____
 |===
 
 [caption=""]
-.Quantum point of view on programming
-image::bdd_mini.jpg[Quantum point of view on programming, 600, 600]
+.A quantum point of view on programming
+image::bdd_mini.jpg[A quantum point of view on programming, 600, 600]
 
 Programmer State Attention Exclusion Principle:: A programmer
 attentions should not occupy different states simultaneously.
