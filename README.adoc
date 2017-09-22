@@ -16,10 +16,15 @@ Literatura
 
 Narzędzia
 
+. https://www.learnenough.com[Learn Enough] by Michael Hartl
+. Git
+.. https://git-scm.com/book/en/v2[Pro Git book] by by Scott Chacon and Ben Straub
+... https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration[GitHub – Account Setup and Configuration]
+..
 . Linters
 . Code smell detectors (and brothers & sisters)
-.. https://github.com/troessner/reek[reek] (for Ruby language)
-.. https://github.com/bbatsov/rubocop[rubocop] – static code analyzer & style guide
+.. https://github.com/troessner/reek[Reek] (for Ruby language)
+.. https://github.com/bbatsov/rubocop[RuboCop] – static code analyzer & style guide
 .. https://github.com/seattlerb/flay[Flay] – analyzes code for structural similarities
 . Editors
 .. https://atom.io[Atom]
