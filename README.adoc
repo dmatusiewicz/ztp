@@ -10,7 +10,7 @@
 
 [quote, Edsger W. Dijkstra, On the cruelty of really teaching computer science]
 ____
-The usual way in which we plan today for tomorrow is in yesterday's vocabulary.
+*The usual way in which we plan today for tomorrow is in yesterday's vocabulary.*
 We do so, because we try to get away with the concepts we are familiar with and
 that have acquired their meanings in our past experience. Of course, the words
 and the concepts don't quite fit because our future differs from our past, but
