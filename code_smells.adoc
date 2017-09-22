@@ -1,0 +1,36 @@
+## Code smells ➨ Refactor
+
+[quote]
+____
+Code smells suggest refactorings.
+____
+
+[cols=">10s,25,65", options="header", caption=""]
+.Code Smells, Refactoring in Ruby by W. C. Wake & K. Rutherford
+|===
+^| # ^| Code Smell   ^| Refactorings
+
+| 2+^e| Accommodating Change
+| 2+^e| Conditional Logic
+| 2+^e| Data
+| 2+^e| Duplication
+|     | Dervived Value  |
+|     | Duplicated Code |
+| 2+^e| Inheritance
+|     | Repeated Value  |
+| 2+^e| Libraries
+| 2+^e| Measurable Smells
+| 2+^e| Names
+|     | Inconsistent Name    | j.w.
+|     | Type Embeded in Name | Rename Method (or constant etc.)
+|     | Uncommunicative Name | j.w.
+| 2+^e| Responsibility
+|   1 | Feature Envy           | Extract Method, Move Method, see Utility Function
+|   2 | Global Variable        | Add Parameter
+|     | Greedy Module          |
+|     | Inappropriate Intimacy |
+|     | Message Chain          |
+|     | Middle Man             |
+|   2 | Utility Function       | Extract Class
+| 2+^e| Unnecessary Complexity
+|===
