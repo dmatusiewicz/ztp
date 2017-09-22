@@ -92,7 +92,7 @@ attentions should not occupy different states simultaneously.
 
 Refactoring to technika bezpiecznego udoskonalania *istniejącego kodu*.
 Innymi słowami, w trakcie refactoringu poprawiamy kod udoskonalając jego
-wewnętrzną strukturę i nie zmieniając jego działania.
+wewnętrzną strukturę i nie zmieniając jego działania (semantyki).
 
 W trakcie refactoringu zmienia się nasze rozumienie cudzego kodu
 Dlatego kod po refactoringu jest łatwiejszy w zrozumieniu
