@@ -102,7 +102,7 @@ i łatwiej go rozszerzać (szybciej piszemy nowy kod i robimy mniej błędów).
 ### A refactoring example – _Hide Delegate_
 
 Refactorings are designed to be safe transformations.
-But mistakes happens. So, use version control.
+But mistakes happens. So, use Git.
 
 .hide_delegate.rb
 ```ruby
