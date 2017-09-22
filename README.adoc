@@ -39,7 +39,9 @@ Narzędzia
 . Code smell detectors (and brothers & sisters)
 .. https://github.com/troessner/reek[Reek] (for Ruby language)
 .. https://github.com/bbatsov/rubocop[RuboCop] – static code analyzer & style guide
+.. https://github.com/seattlerb/flog[Flog] – reports the most tortured code in an easy to read pain report – the higher the score, the more pain the code is in
 .. https://github.com/seattlerb/flay[Flay] – analyzes code for structural similarities
+.. https://github.com/meganemura/sloc[SLOC] – a tool for counting source lines of code
 . Editors
 .. https://atom.io[Atom]
 
