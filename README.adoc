@@ -6,6 +6,15 @@
 :pygments-style: github
 :icons: font
 
+[quote, Edsger W. Dijkstra, On the cruelty of really teaching computer science]
+____
+The usual way in which we plan today for tomorrow is in yesterday's vocabulary.
+We do so, because we try to get away with the concepts we are familiar with and
+that have acquired their meanings in our past experience. Of course, the words
+and the concepts don't quite fit because our future differs from our past, but
+then we stretch them a little bit.
+____
+
 Literatura
 
 . Greg Young, https://vimeo.com/108441214/description?__s=jvsvsq3unktoidfpqwzm[The art of destroying software], Vimeo
@@ -13,6 +22,7 @@ Literatura
   https://martinfowler.com/books/refactoring.html[Java Edition]
 . http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm#format/e[Czysty kod. Podręcznik dobrego programisty] (ebook)
 . https://www.sandimetz.com[Sandi Metz], https://www.sandimetz.com/99bottles[99 Bottles off OOP] (ebooks)
+. http://www.cs.utexas.edu/~EWD/ewd10xx/EWD1036.PDF[On the cruelty of really teaching computer science]
 
 Narzędzia
 
