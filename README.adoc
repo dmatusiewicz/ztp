@@ -170,8 +170,8 @@ end
 
 Code smells suggest refactorings.
 
-NOTE: Probably, these refactorings are responsible for fixing the most
-smells: Move Method, Extract Class, Move Field, Extract Method
+NOTE: *Move Method*, *Extract Class*, *Move Field*, *Extract Method*: probably,
+these refactorings are responsible for fixing the most smells.
 
 WARNING: Quite a few refactorings are not mentioned by any
 of the smells.
