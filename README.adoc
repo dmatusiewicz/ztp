@@ -166,7 +166,7 @@ end
 ```
 
 
-## Code smells ➨ Refactor
+## Code smells ➨ Refactorings
 
 Code smells suggest refactorings.
 
