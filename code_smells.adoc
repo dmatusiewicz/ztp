@@ -7,46 +7,54 @@ ____
 
 {nbsp}
 
-[cols=">10s,40,50", options="header", caption=""]
+[cols="^10s,40,50", options="header", caption=""]
 |===
 ^| # ^| Code Smell   ^| Refactorings
 
-| 2+^s| Accommodating Change
-| 2+^s| Conditional Logic
+  3+^s| Accommodating Change
+|     |  |
+
+  3+^s| Conditional Logic
 |     | Nil Check                      | Introduce Null Object, use reasonable default value
 |     | Special Case                   | Replace Conditional with Polymorphism, Extract Method; see Control Coupling
 |     | Complicated Boolean Expression | Introduce Explaining Variable, Decompose Conditional; use guard clauses
 |     | Control Coupling               | Extract Method & Inline Method
 |     | Simulated Polymorphism         | Extract Method, Move Method, Replace Type Code With Subclass,
                                          Replace Type Code with State/Strategy, Replace Conditional with Polymorphism
-| 2+^s| Data
+  3+^s| Data
 |     | Open Secret     | Replace Array with Object, Replace Hash With Object; see Data Clump
 |     | Data Class      | Remove Settings Method, Encapsulate Collection, Extract Method, Move Method,
                           Rename Method, Add Parameter, Remove Parameter, Remove Method
 |     | Data Clump      | Extract Class, Introduce Parameter Object
 |     | Temporary Field | Extract Class
 
-| 2+^s| Duplication
+  3+^s| Duplication
 |     | Dervived Value  | Replace Value with Expression
 |     | Repeated Value  | Replace Magic Number with Symbolic Constant, Extract Method, Form Template Method
 |     | Duplicated Code | Extract Method, Pull Up Method, Pull up Instance Variable, Form Template Method
                           Substitute Algorithm; see Feature Envy
 |     | Alternative Modules with Different Interfaces | Rename Method, Move Method, Add Parameter,
                           Parametrize Method, Extract Superclass or remove class or module
-| 2+^s| Inheritance
+
+  3+^s| Inheritance
 |     | Repeated Value  |
-| 2+^s| Libraries
-| 2+^s| Measurable Smells
+
+  3+^s| Libraries
+|     |   |
+
+  3+^s| Measurable Smells
 |     | Comments            | Extract Method, Rename Method, Introduce Assertion
 |     | Long Method         | Extract Method, Replace Method with Method Object
 |     | Large Module        | Extract Class, Extract Module, Extract Submodule, Duplicate Observed Data;
                               possibly fix these smells first: Long Method, Data Clumps, Temporary Fields
 |     | Long Parameter List | Replace Parameters with Method, Preserve Whole Object, Introduce Parameter Object
-| 2+^s| Names
+
+  3+^s| Names
 |     | Inconsistent Name    | Rename Method (or constant etc.)
 |     | Type Embeded in Name | Rename Method (or constant etc.)
 |     | Uncommunicative Name | Rename Method (or constant etc.)
-| 2+^s| Responsibility
+
+  3+^s| Responsibility
 |   ! | Feature Envy           | Extract Method, Move Method, see Utility Function
 |     | Global Variable        | Add Parameter
 |     | Greedy Module          |
@@ -54,7 +62,8 @@ ____
 |     | Message Chain          |
 |     | Middle Man             |
 |   ! | Utility Function       | Extract Class
-| 2+^s| Unnecessary Complexity
+
+  3+^s| Unnecessary Complexity
 |     | Dead Code              | delete (posibbly recursively) the unused code
 |     | Speculative Generality | Inline Class, Collapse Hierarchy, Inline Method, Remove Method,
                                  Remove Parameter (instance variables etc.)
