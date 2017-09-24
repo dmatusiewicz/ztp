@@ -7,8 +7,9 @@ ____
 
 {nbsp}
 
+Code Smells from the book _Refactoring in Ruby_ by W. C. Wake & K. Rutherford
+
 [cols=">10s,25,65", options="header", caption=""]
-.Code Smells from the book _Refactoring in Ruby_ by W. C. Wake & K. Rutherford
 |===
 ^| # ^| Code Smell   ^| Refactorings
 
