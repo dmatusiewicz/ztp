@@ -242,7 +242,7 @@ end
 ```
 
 ```sh
-flog -ad verse.rb
+flog -ad verse.rb # --all --details
     36.2: flog total
     36.2: flog/method average
 
