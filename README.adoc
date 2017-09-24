@@ -222,7 +222,43 @@ smelly.rb -- 2 warnings:
   [5]:UncommunicativeVariableName: Smelly#x has the variable name 'y' [https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md]
 ```
 
-### Exercises to try – Smell of the Week
+## Rediscovering code simplicity
+
+Do wyszukiwania _pain in code_ możemy użyć narzędzia  *flog]* – the higher the
+score, the more pain the code is in. Przykład jest na stronie
+https://github.com/seattlerb/flog[Flog].
+
+.verse.rb
+```ruby
+def verse(n)
+  "#{n == 0 ? 'No more' : n} bottle#{'s' if n != 1}" +
+  " of beer on the wall, " +
+  "#{n == 0 ? 'no more' : n} bottle#{'s' if n != 1} of beer.\n" +
+  "#{n > 0  ? "Take #{n > 1 ? 'one' : 'it'} down and pass it around"
+            : "Go to the store and buy some more"}, " +
+  "#{n-1 < 0 ? 99 : n-1 == 0 ? 'no more' : n-1} bottle#{'s' if n-1 != 1}"+
+  " of beer on the wall.\n"
+end
+```
+
+```sh
+flog -ad verse.rb
+    36.2: flog total
+    36.2: flog/method average
+
+    36.2: main#verse                       verse.rb:1-8
+    15.2:   branch
+     7.0:   +
+     6.5:   -
+     5.3:   ==
+     5.2:   !=
+     4.1:   lit_fixnum
+     3.3:   >
+     1.4:   <
+```
+
+
+## Exercises to try – Smell of the Week
 
 Więcej przykładowych programów do wybróbowania z programem _reek_ można
 znależć na http://www.codequizzes.com/ruby[Learn Ruby].
