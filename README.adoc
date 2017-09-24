@@ -22,8 +22,10 @@ ____
 Literatura
 
 . Greg Young, https://vimeo.com/108441214/description?__s=jvsvsq3unktoidfpqwzm[The art of destroying software], Vimeo
-. Refactoring https://martinfowler.com/books/refactoringRubyEd.html[Ruby Edition],
+. Refactoring https://martinfowler.com/books/refactoringRubyEd.html[Ruby Edition]
+  by Jay Fields, Shane Harvie, and Martin Fowler (with Kent Beck),
   https://martinfowler.com/books/refactoring.html[Java Edition]
+  by Martin Fowler (with Kent Beck, John Brant, William Opdyke, and Don Roberts)
 . http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm#format/e[Czysty kod. Podręcznik dobrego programisty] (ebook)
 . https://www.sandimetz.com[Sandi Metz], https://www.sandimetz.com/99bottles[99 Bottles off OOP] (ebooks)
 . http://www.cs.utexas.edu/~EWD/ewd10xx/EWD1036.PDF[On the cruelty of really teaching computer science]
