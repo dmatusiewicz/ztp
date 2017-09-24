@@ -7,7 +7,7 @@ ____
 
 {nbsp}
 
-[cols=">10s,25,65", options="header", caption=""]
+[cols=">20s,25,55", options="header", caption=""]
 |===
 ^| # ^| Code Smell   ^| Refactorings
 
