@@ -82,7 +82,7 @@ ____
                                  see Large Module, Data Clump
 
    3+h| Unnecessary Complexity
-|     | Dead Code              | delete (posibbly recursively) the unused code
+|     | Dead Code              | delete (posibbly recursively) unused code
 |     | Speculative Generality | Inline Class, Collapse Hierarchy, Inline Method, Remove Method,
                                  Remove Parameter (instance variables etc.)
 |     | Greedy Method          | see Long Method, Feature Envy
