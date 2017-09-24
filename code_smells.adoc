@@ -21,9 +21,10 @@ ____
                                          Replace Type Code with State/Strategy, Replace Conditional with Polymorphism
 | 2+^e| Data
 |     | Open Secret     | Replace Array with Object, Replace Hash With Object; see Data Clump
-|     | Data Class      |
-|     | Data Clump      |
-|     | Temporary Field |
+|     | Data Class      | Remove Settings Method, Encapsulate Collection, Extract Method, Move Method,
+                          Rename Method, Add Parameter, Remove Parameter, Remove Method
+|     | Data Clump      | Extract Class, Introduce Parameter Object
+|     | Temporary Field | Extract Class
 
 | 2+^e| Duplication
 |     | Dervived Value  | Replace Value with Expression
