@@ -21,7 +21,7 @@ ____
 
 Literatura
 
-. Greg Young, https://vimeo.com/108441214/description?__s=jvsvsq3unktoidfpqwzm[The art of destroying software], Vimeo
+. Greg Young, https://vimeo.com/108441214/description?__s=jvsvsq3unktoidfpqwzm[The art of destroying software] (Vimeo)
 . Refactoring https://martinfowler.com/books/refactoringRubyEd.html[Ruby Edition]
   by Jay Fields, Shane Harvie, and Martin Fowler (with Kent Beck),
   https://martinfowler.com/books/refactoring.html[Java Edition]
