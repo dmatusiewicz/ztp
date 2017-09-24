@@ -21,10 +21,15 @@ ____
 |     | Repeated Value  |
 | 2+^e| Libraries
 | 2+^e| Measurable Smells
+|     | Comments            | Extract Method, Rename Method, Introduce Assertion
+|     | Long Method         | Extract Method, Replace Method with Method Object
+|     | Large Module        | Extract Class, Extract Module, Extract Submodule, Duplicate Observed Data;
+                              possibly fix these smells first: Long Method, Data Clumps, Temporary Fields
+|     | Long Parameter List | Replace Parameters with Method, Preserve Whole Object, Introduce Parameter Object
 | 2+^e| Names
-|     | Inconsistent Name    | j.w.
+|     | Inconsistent Name    | Rename Method (or constant etc.)
 |     | Type Embeded in Name | Rename Method (or constant etc.)
-|     | Uncommunicative Name | j.w.
+|     | Uncommunicative Name | Rename Method (or constant etc.)
 | 2+^e| Responsibility
 |   1 | Feature Envy           | Extract Method, Move Method, see Utility Function
 |   2 | Global Variable        | Add Parameter
@@ -34,6 +39,12 @@ ____
 |     | Middle Man             |
 |   2 | Utility Function       | Extract Class
 | 2+^e| Unnecessary Complexity
+|     | Dead Code              | delete (posibbly recursively) the unused code
+|     | Speculative Generality | Inline Class, Collapse Hierarchy, Inline Method, Remove Method,
+                                 Remove Parameter (instance variables etc.)
+|     | Greedy Method          |
+|     | Procedural Code        |
+|     | Dynamic Code Creation  |
 |===
 
 Source: _Refactoring in Ruby_ by W. C. Wake & K. Rutherford.
