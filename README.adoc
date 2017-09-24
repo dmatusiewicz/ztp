@@ -140,6 +140,7 @@ left_x = rect.top_left.x
 and wy may want to hide this delegation.
 
 The suggested steps for _Hide Delegate_ are following:
+
 1. Create a delegating method on the `Rectangle` class. *Test*.
 2. For each client of the delegate adjust it to call the new method. *Test*.
 3. If no client needs to access the delegate any longer
