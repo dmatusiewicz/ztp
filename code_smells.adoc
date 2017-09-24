@@ -37,7 +37,15 @@ ____
                           Parametrize Method, Extract Superclass or remove class or module
 
    3+h| Inheritance
-|     | Repeated Value  |
+|     | Implementation Inheritance | Replace Inheritance with Delegation, Extract Class, Extract Module;
+                                     see Middle Man
+|     | Refused Bequest            | Replace Inheritance with Delegation, Move Method, Introduce Null Object,
+                                     Extract Subclass, Push Down Method;
+                                     see Conditional Logic
+|     | Inappropriate Intimacy     | Form Template Method, Replace Inheritance with Delegation;
+                                     see Implementation Inheritance
+|     | Lazy Class                 | Collapse Hierarchy, Inline Class;
+                                     see Dead Code
 
   3+h| Libraries
 |     |   |
