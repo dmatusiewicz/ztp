@@ -1,9 +1,11 @@
-## Code smells ➨ Refactor
+## Code smells ➨ Refactorings
 
 [quote]
 ____
 Code smells suggest refactorings.
 ____
+
+{nbsp}
 
 [cols=">10s,25,65", options="header", caption=""]
 .Code Smells, Refactoring in Ruby by W. C. Wake & K. Rutherford
