@@ -36,7 +36,7 @@ Narzędzia
 
 . https://www.learnenough.com[Learn Enough] by Michael Hartl
 . Git
-.. https://git-scm.com/book/en/v2[Pro Git book] by by Scott Chacon and Ben Straub
+.. https://git-scm.com/book/en/v2[Pro Git book] by Scott Chacon and Ben Straub
 ... https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration[GitHub – Account Setup and Configuration]
 ..
 . Linters
