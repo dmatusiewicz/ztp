@@ -1,4 +1,4 @@
-## Code smells ➨ Refactorings
+## Table of Refactorings that will address the Code Smells
 
 [quote]
 ____
