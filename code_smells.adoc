@@ -11,7 +11,7 @@ ____
 |===
 ^| # ^| Code Smell   ^| Refactorings
 
-| 2+^e| Accommodating Change
+| 2+^es| Accommodating Change
 | 2+^e| Conditional Logic
 |     | Nil Check                      | Introduce Null Object, use reasonable default value
 |     | Special Case                   | Replace Conditional with Polymorphism, Extract Method; see Control Coupling
