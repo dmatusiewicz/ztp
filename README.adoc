@@ -50,12 +50,6 @@ Narzędzia
 .. https://atom.io[Atom]
 
 
-## Object Oriented Design
-
-The foundation of an object-oriented system is the *message*,
-but the most visible organizational structure
-in a a class-based OO language (Ruby) is the *class*.
-
 [quote, S. Metz, Practical Object Oriented Design in Ruby]
 ____
 If your application succeeds many of the decisions you
@@ -64,6 +58,11 @@ Design is more the art of *preserving changeability*
 than it is the act of achieving perfection.
 ____
 
+## Object Oriented Design
+
+The foundation of an object-oriented system is the *message*,
+but the most visible organizational structure
+in a a class-based OO language (Ruby) is the *class*.
 {nbsp}
 
 So, how to create classes to allow for easy changes?
