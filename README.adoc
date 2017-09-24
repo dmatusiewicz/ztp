@@ -178,6 +178,16 @@ these refactorings are responsible for fixing the most smells.
 WARNING: Quite a few refactorings are not mentioned by any
 of the smells.
 
+Lista wszystkich *code smells* z książki _Refactoring – Ruby ed._.
+
+[cols="^10s,80", options="header", caption=""]
+|===
+| #   | Code Smell
+
+| 123 | Duplicated Code
+|     | Long Method
+|===
+
 
 ## The refactoring cycle
 
