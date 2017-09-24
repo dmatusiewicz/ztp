@@ -90,18 +90,22 @@ Programmer State Attention Exclusion Principle:: A programmer
 attentions should not occupy different states simultaneously.
 
 
-## Refactor
+## Refactoring
 
-Refactoring to technika bezpiecznego udoskonalania *istniejącego kodu*.
+Refactoring to metoda *bezpiecznego* udoskonalania *istniejącego kodu*.
 Innymi słowami, w trakcie refactoringu poprawiamy kod udoskonalając jego
 wewnętrzną strukturę i nie zmieniając jego działania (semantyki).
+
+W książce
+https://martinfowler.com/books/refactoringRubyEd.html[Refactoring – RubyEdition]
+opisano ok. 80 refactoringów.
 
 W trakcie refactoringu zmienia się nasze rozumienie cudzego kodu
 Dlatego kod po refactoringu jest łatwiejszy w zrozumieniu
 i łatwiej go rozszerzać (szybciej piszemy nowy kod i robimy mniej błędów).
 
 
-### A refactoring example – _Hide Delegate_
+## A refactoring example – _Hide Delegate_
 
 Refactorings are designed to be safe transformations.
 But mistakes happens. So, use Git.
@@ -261,7 +265,8 @@ flog -ad verse.rb # --all --details
 ## Exercises to try – Smell of the Week
 
 Więcej przykładowych programów do wybróbowania z programem _reek_ można
-znależć na http://www.codequizzes.com/ruby[Learn Ruby].
+znależć na http://www.codequizzes.com/ruby[Learn Ruby]
+(Beginner, Intermediate, Advanced, *TDD*).
 
 Można też spróbować swoich sił na zadaniach z portalu http://exercism.io[Exercism].
 
