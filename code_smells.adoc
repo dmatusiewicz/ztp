@@ -15,8 +15,12 @@ ____
 | 2+^e| Conditional Logic
 | 2+^e| Data
 | 2+^e| Duplication
-|     | Dervived Value  |
-|     | Duplicated Code |
+|     | Dervived Value  | Replace Value with Expression
+|     | Repeated Value  | Replace Magic Number with Symbolic Constant, Extract Method, Form Template Method
+|     | Duplicated Code | Extract Method, Pull Up Method, Pull up Instance Variable, Form Template Method
+                          Substitute Algorithm; see Feature Envy
+|     | Alternative Modules with Different Interfaces | Rename Method, Move Method, Add Parameter,
+                          Parametrize Method, Extract Superclass or remove class or module
 | 2+^e| Inheritance
 |     | Repeated Value  |
 | 2+^e| Libraries
@@ -31,20 +35,20 @@ ____
 |     | Type Embeded in Name | Rename Method (or constant etc.)
 |     | Uncommunicative Name | Rename Method (or constant etc.)
 | 2+^e| Responsibility
-|   1 | Feature Envy           | Extract Method, Move Method, see Utility Function
-|   2 | Global Variable        | Add Parameter
+|   ! | Feature Envy           | Extract Method, Move Method, see Utility Function
+|     | Global Variable        | Add Parameter
 |     | Greedy Module          |
 |     | Inappropriate Intimacy |
 |     | Message Chain          |
 |     | Middle Man             |
-|   2 | Utility Function       | Extract Class
+|   ! | Utility Function       | Extract Class
 | 2+^e| Unnecessary Complexity
 |     | Dead Code              | delete (posibbly recursively) the unused code
 |     | Speculative Generality | Inline Class, Collapse Hierarchy, Inline Method, Remove Method,
                                  Remove Parameter (instance variables etc.)
-|     | Greedy Method          |
-|     | Procedural Code        |
-|     | Dynamic Code Creation  |
+|     | Greedy Method          | see Long Method, Feature Envy
+|     | Procedural Code        | Replace Loop with Collection Closure Method, Replace Temp with Chain
+|     | Dynamic Code Creation  | Replace Dynamic Receptor with Dynamic Method Definition, Move Eval from Run-time to Parse-time
 |===
 
 Source: _Refactoring in Ruby_ by W. C. Wake & K. Rutherford.
