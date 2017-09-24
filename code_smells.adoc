@@ -63,13 +63,15 @@ ____
 |     | Uncommunicative Name | Rename Method (or constant etc.)
 
    3+h| Responsibility
-|   ! | Feature Envy           | Extract Method, Move Method, see Utility Function
+|   ! | Feature Envy           | Extract Method, Move Method; see Utility Function
+|   ! | Utility Function       | Extract Class, Move Method; see Utility Function
 |     | Global Variable        | Add Parameter
-|     | Greedy Module          |
-|     | Inappropriate Intimacy |
-|     | Message Chain          |
-|     | Middle Man             |
-|   ! | Utility Function       | Extract Class
+|     | Inappropriate Intimacy | Move Method, Move Instance Variable, Extract Class, Hide Delegate
+|     | Message Chain          | Extract Method, Move Method, Hide Delegate;
+                                 see Inappropriate Intimacy
+|     | Middle Man             | Remove Middle Man, Replace Delegation with Inheritance
+|     | Greedy Module          | Isolate Dynamic Receptor;
+                                 see Large Module, Data Clump
 
    3+h| Unnecessary Complexity
 |     | Dead Code              | delete (posibbly recursively) the unused code
