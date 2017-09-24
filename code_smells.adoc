@@ -11,10 +11,10 @@ ____
 |===
 ^| # ^| Code Smell   ^| Refactorings
 
-  3+^s| Accommodating Change
+   3+h| Accommodating Change
 |     |  |
 
-  3+^s| Conditional Logic
+   3+h| Conditional Logic
 |     | Nil Check                      | Introduce Null Object, use reasonable default value
 |     | Special Case                   | Replace Conditional with Polymorphism, Extract Method; see Control Coupling
 |     | Complicated Boolean Expression | Introduce Explaining Variable, Decompose Conditional; use guard clauses
