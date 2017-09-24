@@ -12,7 +12,12 @@ ____
 ^| # ^| Code Smell   ^| Refactorings
 
    3+h| Accommodating Change
-|     |  |
+|     | Divergent Change                 | Extract Class, Extract Module, Extract Superclass, Extract Subclass;
+                                           see Simulated Polymorphism, Greedy Module
+|     | Shotgun Surgery                  | Extract Module, Move Field, Move Method, Inline Module;
+                                           see Open Secret
+|     | Parallel Inheritance Hierarchies | Move Field, Move Method
+|     | Combinatorial Explosion          | Replace Inheritance with Delegation, Tease Apart Inheritance
 
    3+h| Conditional Logic
 |     | Nil Check                      | Introduce Null Object, use reasonable default value
