@@ -53,7 +53,10 @@ ____
                                      see Dead Code
 
   3+h| Libraries
-|     |   |
+|     | Incomplete Library Module | Introduce Local Extension, Extract Module
+|     | Reinvented Wheel          | see Alternative Modules with Different Interfaces
+|     | Runaway Dependencies      | Dependency Inversion, Parametrize Method;
+                                    see Implementation Inheritance
 
    3+h| Measurable Smells
 |     | Comments            | Extract Method, Rename Method, Introduce Assertion
