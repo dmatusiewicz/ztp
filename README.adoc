@@ -6,6 +6,7 @@
 :pygments-style: github
 :icons: font
 
+// https://classroom.github.com/classrooms
 // https://www.showmax.com/pol/tvseries/466ad0jw-mr-robot
 
 [quote, Edsger W. Dijkstra, On the cruelty of really teaching computer science]
