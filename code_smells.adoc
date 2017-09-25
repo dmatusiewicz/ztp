@@ -72,7 +72,7 @@ ____
 
    3+h| Responsibility
 |   ! | Feature Envy           | Extract Method, Move Method; see Utility Function
-|   ! | Utility Function       | Extract Class, Move Method; see Utility Function
+|   ! | Utility Function       | Extract Class, Move Method
 |     | Global Variable        | Add Parameter
 |     | Inappropriate Intimacy | Move Method, Move Instance Variable, Extract Class, Hide Delegate
 |     | Message Chain          | Extract Method, Move Method, Hide Delegate;
