@@ -20,6 +20,8 @@ ____
 
 {nbsp}
 
+## From Simplicity to Changeability
+
 Literatura
 
 . Greg Young, https://vimeo.com/108441214/description?__s=jvsvsq3unktoidfpqwzm[The art of destroying software] (Vimeo)
