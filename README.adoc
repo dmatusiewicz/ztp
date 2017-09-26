@@ -30,10 +30,10 @@ Literatura
 . http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm#format/e[Czysty kod. Podręcznik dobrego programisty]
   by Robert C. Martin (Uncle Bob),
 . http://www.poodr.com[Practical Object-Oriented Design in Ruby] – a programmers tale about how to write object-oriented code
-  by Sandi Metz & Katrina Owen
+  by Sandi Metz
   or
   https://www.sandimetz.com/99bottles[99 Bottles off OOP] – a practical guide to writing cost-effective, maintainable, and pleasing object-oriented code
-  by https://www.sandimetz.com[Sandi Metz]
+  by https://www.sandimetz.com[Sandi Metz] & http://www.kytrinyx.com[Katrina Owen]
 . http://www.cs.utexas.edu/~EWD/ewd10xx/EWD1036.PDF[On the cruelty of really teaching computer science]
   by Edsger W. Dijkstra
 
