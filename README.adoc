@@ -303,7 +303,7 @@ flog -ad verse.rb # --all --details
 ```
 
 
-## Exercises to try – Smell of the Week
+## Smell of the Week – exercises to try
 
 Więcej przykładowych programów do wybróbowania z programem _reek_ można
 znależć na http://www.codequizzes.com/ruby[Learn Ruby]
