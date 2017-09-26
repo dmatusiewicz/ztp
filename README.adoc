@@ -20,6 +20,14 @@ ____
 
 ## From Simplicity to Changeability
 
+[quote, S. Metz, Practical Object Oriented Design in Ruby]
+____
+If your application succeeds many of the decisions you
+make today will need to be changed later. […] +
+Design is more the art of *preserving changeability*
+than it is the act of achieving perfection.
+____
+
 Literatura
 
 . Greg Young, https://vimeo.com/108441214/description?__s=jvsvsq3unktoidfpqwzm[The art of destroying software] (Vimeo)
@@ -54,15 +62,6 @@ Narzędzia
 . Editors
 .. https://atom.io[Atom]
 
-{nbsp}
-
-[quote, S. Metz, Practical Object Oriented Design in Ruby]
-____
-If your application succeeds many of the decisions you
-make today will need to be changed later. […] +
-Design is more the art of *preserving changeability*
-than it is the act of achieving perfection.
-____
 
 ## Object Oriented Design
 
