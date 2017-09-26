@@ -28,6 +28,8 @@ Design is more the art of *preserving changeability*
 than it is the act of achieving perfection.
 ____
 
+{nbsp}
+
 Literatura
 
 . Greg Young, https://vimeo.com/108441214/description?__s=jvsvsq3unktoidfpqwzm[The art of destroying software] (Vimeo)
