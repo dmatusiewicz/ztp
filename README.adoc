@@ -3,8 +3,10 @@
 :experimental:
 :imagesdir: ./images
 :source-highlighter: pygments
-:pygments-style: github
+:pygments-style: pastie
 :icons: font
+
+asciidoctor -a linkcss README.adoc
 
 // https://classroom.github.com/classrooms
 // https://www.showmax.com/pol/tvseries/466ad0jw-mr-robot
@@ -101,9 +103,9 @@ attentions should not occupy different states simultaneously.
 
 ## Refactoring
 
-Refactoring to metoda *bezpiecznego* udoskonalania *istniejącego kodu*.
+Refactoring to proces/metoda *bezpiecznego* udoskonalania *istniejącego kodu*.
 Innymi słowami, w trakcie refactoringu poprawiamy kod udoskonalając jego
-wewnętrzną strukturę i nie zmieniając jego działania (semantyki).
+wewnętrzną strukturę i nie zmieniając jego działania (semantyki, behavior).
 
 W książce
 https://martinfowler.com/books/refactoringRubyEd.html[Refactoring – RubyEdition]
