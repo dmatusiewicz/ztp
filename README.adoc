@@ -65,7 +65,7 @@ Narzędzia
 .. https://atom.io[Atom]
 
 
-## Object Oriented Design
+## Object Oriented Design (OOD)
 
 The foundation of an object-oriented system is the *message*,
 but the most visible organizational structure
