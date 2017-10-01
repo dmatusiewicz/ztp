@@ -1,4 +1,4 @@
-# Zawansowane Języki Programowania, 17/18
+# Zaawansowane Języki Programowania, 17/18
 :source-highlighter: pygments
 :pygments-style: pastie
 :icons: font
