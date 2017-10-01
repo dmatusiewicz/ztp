@@ -1,13 +1,11 @@
 # Zawansowane Języki Programowania, 17/18
-
-:experimental:
-:imagesdir: ./images
 :source-highlighter: pygments
 :pygments-style: pastie
 :icons: font
+:experimental:
+:imagesdir: ./images
 
-asciidoctor -a linkcss README.adoc
-
+// asciidoctor -a linkcss README.adoc
 // https://classroom.github.com/classrooms
 // https://www.showmax.com/pol/tvseries/466ad0jw-mr-robot
 
