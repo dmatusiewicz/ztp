@@ -270,7 +270,7 @@ smelly.rb -- 2 warnings:
 
 ## Rediscovering Code Simplicity
 
-Do wyszukiwania _pain in code_ możemy użyć narzędzia  *flog]* – the higher the
+Do wyszukiwania _pain in code_ możemy użyć narzędzia *flog* – the higher the
 score, the more pain the code is in. Przykład jest na stronie
 https://github.com/seattlerb/flog[Flog].
 
