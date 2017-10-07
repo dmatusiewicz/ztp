@@ -317,3 +317,11 @@ Można też spróbować swoich sił na zadaniach z portalu http://exercism.io[Ex
 exercism list ruby
 exercism fetch ruby hello-world
 ```
+
+## Misc Git
+
+Checkout by date:
+
+```sh
+git rev-list -1 --before=2016-10-6 master | xargs git checkout
+```
