@@ -1,0 +1,13 @@
+Narzędzia:
+
+. Git & GitHub
+.. https://www.learnenough.com/git-tutorial[Learn Enough Git to Be Dangerous] (M. Hartl)
+.. https://git-scm.com/book/en/v2[Pro Git book] (S. Chacon and B. Straub)
+... Section 6.1 https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration[GitHub – Account Setup and Configuration]
+... Section 6.1 https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project[GitHub – Contributing to a Project]
+. Linters
+. Code smell detectors (and brothers & sisters)
+.. https://github.com/troessner/reek[reek] (for Ruby language)
+.. https://github.com/bbatsov/rubocop[rubocop] – static code analyzer & style guide
+. Editors
+.. https://atom.io[Atom]

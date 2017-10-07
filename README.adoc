@@ -53,7 +53,7 @@ Narzędzia
 . Git
 .. https://git-scm.com/book/en/v2[Pro Git book] by Scott Chacon and Ben Straub
 ... https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration[GitHub – Account Setup and Configuration]
-..
+... https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project[GitHub – Contributing to a Project]
 . Linters
 . Code smell detectors (and brothers & sisters)
 .. https://github.com/troessner/reek[Reek] (for Ruby language)
