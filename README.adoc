@@ -37,7 +37,8 @@ Literatura
   by Jay Fields, Shane Harvie, and Martin Fowler (with Kent Beck),
   https://martinfowler.com/books/refactoring.html[Java Edition]
   by Martin Fowler (with Kent Beck, John Brant, William Opdyke, and Don Roberts)
-. http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm#format/e[Czysty kod. Podręcznik dobrego programisty]
+. http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm#format/e[Czysty kod. Podręcznik dobrego programisty] and
+  https://www.youtube.com/watch?v=ecIWPzGEbFc[The Future of Programming] (YouTube)
   by Robert C. Martin (Uncle Bob),
 . http://www.poodr.com[Practical Object-Oriented Design in Ruby] – a programmers tale about how to write object-oriented code
   by Sandi Metz
