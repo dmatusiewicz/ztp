@@ -4,7 +4,7 @@
 :icons: font
 :experimental:
 
-Mechanics:
+Mechanics, from _Refactorings_ by J. Fields et al.
 
 . Create a new method, and name it after the intention of the method.
 . Copy the extracted code from the source method into the new target method.
@@ -20,6 +20,7 @@ You may need to use Split Tempo- rary Variable and try again. You can eliminate
 temporary variables with Replace Temp with Query.
 . Pass into the target method as parameters local-scope variables that are read
 from the extracted code.
+
 
 ## Example 1
 
