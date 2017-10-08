@@ -323,7 +323,7 @@ exercism fetch ruby hello-world
 Checkout by date:
 
 ```sh
-git rev-list -1 --before=2016-10-6 master | xargs git checkout
+git rev-list -1 --before=2015-10-6 master | xargs git checkout
 ```
 
 Compare:
