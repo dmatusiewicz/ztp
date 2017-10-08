@@ -22,6 +22,7 @@ temporary variables with Replace Temp with Query.
 from the extracted code.
 . Replace the extracted code in the source method with a call to the target method.
 
+
 ## Example 1
 
 ```ruby
@@ -30,13 +31,82 @@ def print_owing(amount)
   puts "name: #{@name}"
   puts "amount: #{amount}"
 end
+
+def print_banner
+  puts "***** Customer Owes *****"
+end
 ```
 
 ### Extract Method
 
 .Step 1
 ```ruby
+def print_owing(amount)
+  print_banner
+  puts "name: #{@name}"
+  puts "amount: #{amount}"
+end
 
+def print_banner
+  puts "***** Customer Owes *****"
+end
+
+def print_details
+end
 ```
+
+.Step 2
+```ruby
+def print_owing(amount)
+  print_banner
+  puts "name: #{@name}"
+  puts "amount: #{amount}"
+end
+
+def print_banner
+  puts "***** Customer Owes *****"
+end
+
+def print_details
+  puts "name: #{@name}"
+  puts "amount: #{amount}"
+end
+```
+
+.Step 3
+```ruby
+def print_owing(amount)
+  print_banner
+  puts "name: #{@name}"
+  puts "amount: #{amount}"
+end
+
+def print_banner
+  puts "***** Customer Owes *****"
+end
+
+def print_details(amount)
+  puts "name: #{@name}"
+  puts "amount: #{amount}"
+end
+```
+
+.Step 7
+```ruby
+def print_owing(amount)
+  print_banner
+  print_details(amount)
+end
+
+def print_banner
+  puts "***** Customer Owes *****"
+end
+
+def print_details(amount)
+  puts "name: #{@name}"
+  puts "amount: #{amount}"
+end
+```
+
 
 ## Example 2
