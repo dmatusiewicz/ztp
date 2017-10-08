@@ -20,7 +20,7 @@ You may need to use Split Tempo- rary Variable and try again. You can eliminate
 temporary variables with Replace Temp with Query.
 . Pass into the target method as parameters local-scope variables that are read
 from the extracted code.
-
+. Replace the extracted code in the source method with a call to the target method.
 
 ## Example 1
 
