@@ -1,0 +1,45 @@
+## Code Smeels recognized by Reek
+
+[cols="^10s,40,50", options="header", caption=""]
+|===
+| # ^| Code Smell ^| Refactorings
+
+| | Attribute |
+| | Class Variable |
+| | Control Couple |
+| | Boolean Parameter |
+| | Control Parameter |
+| | Data Clump |
+| | Duplicate Method Call |
+| | Instance Variable Assumption |
+| | Irresponsible Module |
+| | Large Class |
+| | Too Many Constants |
+| | Too Many Instance Variables |
+| | Too Many Methods |
+| | Long Parameter List | Introduce Parameter Object, Preserve Whole Object
+| | Feature Envy |
+| | Utility Function |
+| | Module Initialize |
+| | Nested Iterators |
+| | Prima-Donna-Method |
+| | Simulated Polymorphism |
+| | Manual Dispatch |
+| | Nil Check |
+| | Repeated Conditional |
+| | Subclassed From Core Class |
+| | _Too Many Statements_ | Extract Method, Replace Temp with Query, Replace Temp with Chain, Replace Method with Method Object, Replace Comment with Method, Decompose Conditional, Replace Loop with Collection Closure Method
+| | Uncommunicative Name |
+| | Uncommunicative Method Name |
+| | Uncommunicative Module Name |
+| | Uncommunicative Parameter Name |
+| | Uncommunicative Variable Name |
+| | Unused Parameters |
+| | Unused Private Method |
+|===
+
+
+## The Smell of the Week
+
+Duplicated Code – the number one in stink parade (Similiar Code by _flay_).
+The number two (probably) – Too Many Statements (Long Method).
