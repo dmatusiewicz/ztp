@@ -325,3 +325,13 @@ Checkout by date:
 ```sh
 git rev-list -1 --before=2016-10-6 master | xargs git checkout
 ```
+
+Compare:
+
+```sh
+git diff tag_1 tag_2
+git diff tag1 tag2 --stat # list of files
+git diff tag1 tag2 -- some/file/name # look at differences for some file
+git diff --name-status master..branch_or_tag_name
+git diff master..branch_or_tag_name
+```
