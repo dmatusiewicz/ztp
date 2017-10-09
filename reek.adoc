@@ -4,38 +4,38 @@
 |===
 | # ^| Code Smell ^| Refactorings
 
-| | Attribute |
-| | Class Variable |
-| | Control Couple |
-| | Boolean Parameter |
-| | Control Parameter |
-| | Data Clump |
-| | Duplicate Method Call |
-| | Instance Variable Assumption |
-| | Irresponsible Module |
-| | Large Class |
-| | Too Many Constants |
-| | Too Many Instance Variables |
-| | Too Many Methods |
-| | Long Parameter List | Introduce Parameter Object, Preserve Whole Object
-| | Feature Envy |
-| | Utility Function |
-| | Module Initialize |
-| | Nested Iterators |
-| | Prima-Donna-Method |
-| | Simulated Polymorphism |
-| | Manual Dispatch |
-| | Nil Check |
-| | Repeated Conditional |
-| | Subclassed From Core Class |
-| | _Too Many Statements_ | Extract Method, Replace Temp with Query, Replace Temp with Chain, Replace Method with Method Object, Replace Comment with Method, Decompose Conditional, Replace Loop with Collection Closure Method
-| | Uncommunicative Name |
-| | Uncommunicative Method Name |
-| | Uncommunicative Module Name |
-| | Uncommunicative Parameter Name |
-| | Uncommunicative Variable Name |
-| | Unused Parameters |
-| | Unused Private Method |
+| 3 | Attribute |
+| 2 | Class Variable |
+|   | Control Couple |
+| 4 | Boolean Parameter |
+| 3 | Control Parameter |
+| 1 | Data Clump |
+| 6 | Duplicate Method Call |
+| 3 | Instance Variable Assumption |
+| 5 | Irresponsible Module |
+|   | Large Class |
+| 1 | Too Many Constants |
+| 2 | Too Many Instance Variables |
+| 2 | Too Many Methods |
+| 3 | Long Parameter List | Introduce Parameter Object, Preserve Whole Object
+| 3 | Feature Envy |
+| 3 | Utility Function |
+|   | Module Initialize |
+| 2 | Nested Iterators |
+|   | Prima-Donna-Method |
+|   | Simulated Polymorphism |
+|   | Manual Dispatch |
+| 2 | Nil Check |
+| 1 | Repeated Conditional |
+|   | Subclassed From Core Class |
+| 7 | _Too Many Statements_ | Extract Method, Replace Temp with Query, Replace Temp with Chain, Replace Method with Method Object, Replace Comment with Method, Decompose Conditional, Replace Loop with Collection Closure Method
+|   | Uncommunicative Name |
+| 1 | Uncommunicative Method Name |
+|   | Uncommunicative Module Name |
+|   | Uncommunicative Parameter Name |
+| 3 | Uncommunicative Variable Name |
+| 2 | Unused Parameters |
+|   | Unused Private Method |
 |===
 
 
