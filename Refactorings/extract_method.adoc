@@ -22,7 +22,7 @@ temporary variables with Replace Temp with Query.
 from the extracted code.
 . Replace the extracted code in the source method with a call to the target method.
 
-## Example
+## Examples
 
 ```ruby
 def print_owing
