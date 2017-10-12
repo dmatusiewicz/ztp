@@ -1,0 +1,171 @@
+# Too Many Statements (Long Methods)
+:source-highlighter: pygments
+:pygments-style: pastie
+:icons: font
+:experimental:
+
+## Example 1 (with local variable)
+
+```ruby
+def print_owing(amount)
+  print_banner
+  puts "name: #{@name}"
+  puts "amount: #{amount}"
+end
+
+def print_banner
+  puts "***** Customer Owes *****"
+end
+```
+
+### Extract Method
+
+Mechanics, from _Refactorings_ by J. Fields et al.
+
+. Create a new method, and name it after the intention of the method.
+. Copy the extracted code from the source method into the new target method.
+. Scan the extracted code for references to any variables that are local in
+scope to the source method. These are local variables and parameters to the
+method.
+. See whether any temporary variables are used only within this extracted code.
+If so, declare them in the target method as temporary variables.
+. Look to see whether any of these local-scope variables are modified by the
+extracted code. If one variable is modified, see whether you can treat the
+extracted code as a query and assign the result to the variable concerned.
+You may need to use Split Temporary Variable and try again. You can eliminate
+temporary variables with Replace Temp with Query.
+. Pass into the target method as parameters local-scope variables that are read
+from the extracted code.
+. Replace the extracted code in the source method with a call to the target method.
+
+.Step 1
+```ruby
+def print_owing(amount)
+  print_banner
+  puts "name: #{@name}"
+  puts "amount: #{amount}"
+end
+
+def print_banner
+  puts "***** Customer Owes *****"
+end
+
+def print_details
+end
+```
+
+.Step 2
+```ruby
+def print_owing(amount)
+  print_banner
+  puts "name: #{@name}"
+  puts "amount: #{amount}"
+end
+
+def print_banner
+  puts "***** Customer Owes *****"
+end
+
+def print_details
+  puts "name: #{@name}"
+  puts "amount: #{amount}"
+end
+```
+
+.Step 3
+```ruby
+def print_owing(amount)
+  print_banner
+  puts "name: #{@name}"
+  puts "amount: #{amount}"
+end
+
+def print_banner
+  puts "***** Customer Owes *****"
+end
+
+def print_details(amount)
+  puts "name: #{@name}"
+  puts "amount: #{amount}"
+end
+```
+
+.Step 7
+```ruby
+def print_owing(amount)
+  print_banner
+  print_details(amount)
+end
+
+def print_banner
+  puts "***** Customer Owes *****"
+end
+
+def print_details(amount)
+  puts "name: #{@name}"
+  puts "amount: #{amount}"
+end
+```
+
+
+## Example 2 (reassigning a local variable)
+
+```ruby
+def print_owing
+  outstanding = 0.0
+  print_banner
+  # calculate outstanding
+  @orders.each do |order|
+    outstanding += order.amount
+  end
+
+  print_details(outstanding)
+end
+
+def print_banner
+  # print banner
+  puts "*************************"
+  puts "***** Customer Owes *****"
+  puts "*************************"
+end
+```
+
+### Extract Method
+
+```ruby
+def print_owing
+  print_banner
+  outstanding = calculate_outstanding
+  print_details(outstanding)
+end
+
+def calculate_outstanding
+  outstanding = 0.0
+  @orders.each do |order|
+    outstanding += order.amount
+  end
+  outstanding
+end
+```
+
+### Replace Loop with Collection Closure Method
+
+```ruby
+def print_owing
+  print_banner
+  outstanding = calculate_outstanding
+  print_details(outstanding)
+end
+
+def calculate_outstanding
+  @orders.inject(0.0) { |result, order| result + order.amount }
+end
+```
+
+
+
+
+
+
+
+## TODO
