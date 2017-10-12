@@ -1,0 +1,97 @@
+# Extract Class
+:source-highlighter: pygments
+:pygments-style: pastie
+:icons: font
+:experimental:
+:toc!:
+
+Mechanics, from _Refactorings_ by J. Fields et al.
+
+. Split responsibilities of the class.
+. Create a new class to express new responsibility.
+. Link the old class to the new class.
+. Use _Move Field_ on each moved field.
+. Use _Move Method_ to move methods over from  old to new.
+. Review responsibilities of each class.
+
+## Example
+
+```ruby
+class Person
+  attr_reader :name
+  attr_accessor :office_area_code
+  attr_accessor :office_number
+
+  def telephone_number # <2>
+    '(' + @office_area_code + ') ' + @office_number # <1>
+  end
+end
+```
+<1> Use _Move Field_ on `@office_area_code` and '@office_number'.
+<2> Use _Move Method_ on `telephone_number`.
+
+.Step 1
+Separate the `telephone_number` behaviour into its own class.
+
+.Step 2
+```ruby
+class TelephoneNumber
+end
+```
+
+.Step 3
+```ruby
+class Person
+  def initialize
+    @office_telephone = TelephoneNumber.new
+  end
+  # ...
+end
+```
+
+.Step 4
+```ruby
+class TelephoneNumber
+  attr_accessor :area_code
+end
+
+class Person
+  def telephone_number # <1>
+    '(' + office_area_code + ') ' + @office_number
+  end
+
+  def office_area_code
+    @office_telephone.area_code
+  end
+
+  def office_area_code=(arg)
+    @office_telephone.area_code = arg
+  end
+end
+```
+
+.Step 4 & 5
+```ruby
+class Person
+  attr_reader :name
+  def initialize
+    @office_telephone = TelephoneNumber.new
+  end
+
+  def telephone_number
+    @office_telephone.telephone_number
+  end
+  
+  def office_telephone
+    @office_telephone
+  end
+end
+
+class TelephoneNumber
+  attr_accessor :area_code, :number
+  def telephone_number
+    '(' + area_code + ') ' + number
+  end
+  # ...
+end
+```
