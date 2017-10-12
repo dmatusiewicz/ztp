@@ -3,6 +3,7 @@
 :pygments-style: pastie
 :icons: font
 :experimental:
+:toc!:
 
 Mechanics, from _Refactorings_ by J. Fields et al.
 

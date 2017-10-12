@@ -1,0 +1,30 @@
+# Inline Temp
+:source-highlighter: pygments
+:pygments-style: pastie
+:icons: font
+:experimental:
+:toc!:
+
+Mechanics, from _Refactorings_ by J. Fields et al.
+
+. Find all references to the temp and replace them with the right=hand side of the assignment.
+. Remove the decalration and the assignment of the temp.
+
+## Example
+
+```ruby
+base_price = an_order.base_price # <1>
+return (base_price > 1000)
+```
+<1> Inline the `base_price` temp.
+
+.Step 1
+```ruby
+base_price = an_order.base_price # <1>
+return (an_order.base_price > 1000)
+```
+
+.Step 2
+```ruby
+return (an_order.base_price > 1000)
+```
