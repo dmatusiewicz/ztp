@@ -269,13 +269,6 @@ smelly.rb -- 2 warnings:
   [5]:UncommunicativeVariableName: Smelly#x has the variable name 'y' [https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md]
 ```
 
-## Most common smells in the project
-Aby oszacować liczbę "zapachów" danego typu w projekcie można posłużyć się komendą:
-```
-reek -f json KATALOG | jq .[].wiki_link -r  | sort | uniq -c | sort -n
-```
-
-
 ## ABC – discovering pain code
 
 Do wyszukiwania _pain in code_ możemy użyć narzędzia *flog* – the higher the
