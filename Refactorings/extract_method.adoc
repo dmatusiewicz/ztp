@@ -9,7 +9,7 @@
 
 ## https://refactoring.guru/extract-method[Benefits]
 
-## Mechanics from Refactoring, Ruby Edition
+## How to Refactor (Ruby Edition)
 
 . Create a new method, and name it after the intention of the method.
 . Copy the extracted code from the source method into the new target method.
