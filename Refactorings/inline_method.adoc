@@ -5,9 +5,9 @@
 :experimental:
 :toc!:
 
-## Why
+## https://refactoring.guru/inline-method[Why]
 
-## Benefits
+## https://refactoring.guru/inline-method[Benefits]
 
 ## How to Refactor (Ruby Edition)
 

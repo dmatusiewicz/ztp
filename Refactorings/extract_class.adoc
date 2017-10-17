@@ -5,9 +5,11 @@
 :experimental:
 :toc!:
 
-## Why
+## https://refactoring.guru/extract-class[Why]
 
-## Benefits
+## https://refactoring.guru/extract-class[Benefits]
+
+## https://refactoring.guru/extract-class[Drawbacks]
 
 ## How to Refactor (Ruby Edition)
 

@@ -5,8 +5,12 @@
 :experimental:
 :toc!:
 
-## Why
+## https://refactoring.guru/move-method[Why]
 
 ## Benefits
 
-## How to Refactor (Ruby Edition)
+TODO
+
+## https://refactoring.guru/move-method[How to Refactor]
+
+TODO: Ruby Edition

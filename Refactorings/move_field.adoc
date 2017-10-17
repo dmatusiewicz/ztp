@@ -5,8 +5,10 @@
 :experimental:
 :toc!:
 
-## Why
+## https://refactoring.guru/move-field[Why]
 
-## Benefits
+## https://refactoring.guru/move-field[Benefits]
 
-## How to Refactor (Ruby Edition)
+## https://refactoring.guru/move-field[How to Refactor (Ruby Edition)]
+
+TODO: wpisać how to

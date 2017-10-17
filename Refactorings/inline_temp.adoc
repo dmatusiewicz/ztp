@@ -5,14 +5,16 @@
 :experimental:
 :toc!:
 
-## Why
+## https://refactoring.guru/inline-temp[Why]
 
-## Benefits
+## https://refactoring.guru/inline-temp[Benefits]
 
-## How to Refactor (Ruby Edition)
+## https://refactoring.guru/inline-temp[How to Refactor]
 
 . Find all references to the temp and replace them with the right=hand side of the assignment.
 . Remove the decalration and the assignment of the temp.
+
+## https://refactoring.guru/inline-temp[Drawbacks]
 
 ## Example
 
