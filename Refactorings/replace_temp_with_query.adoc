@@ -5,8 +5,11 @@
 :experimental:
 :toc!:
 
-Mechanics, from _Refactorings_ by J. Fields et al.
+## Why
 
+## Benefits
+
+## How to Refactor (Ruby Edition)
 . Extract the right-hand side of the assignment into a method.
 . Inline temp on the temp.
 

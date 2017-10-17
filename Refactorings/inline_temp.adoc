@@ -5,7 +5,11 @@
 :experimental:
 :toc!:
 
-Mechanics, from _Refactorings_ by J. Fields et al.
+## Why
+
+## Benefits
+
+## How to Refactor (Ruby Edition)
 
 . Find all references to the temp and replace them with the right=hand side of the assignment.
 . Remove the decalration and the assignment of the temp.

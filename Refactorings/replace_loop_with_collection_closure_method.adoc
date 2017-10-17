@@ -1,0 +1,12 @@
+# Replace Loop with Collection Closure Method
+:source-highlighter: pygments
+:pygments-style: pastie
+:icons: font
+:experimental:
+:toc!:
+
+## Why
+
+## Benefits
+
+## How to Refactor

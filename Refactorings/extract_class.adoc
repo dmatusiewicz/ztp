@@ -5,7 +5,11 @@
 :experimental:
 :toc!:
 
-Mechanics, from _Refactorings_ by J. Fields et al.
+## Why
+
+## Benefits
+
+## How to Refactor (Ruby Edition)
 
 . Split responsibilities of the class.
 . Create a new class to express new responsibility.
@@ -81,7 +85,7 @@ class Person
   def telephone_number
     @office_telephone.telephone_number
   end
-  
+
   def office_telephone
     @office_telephone
   end

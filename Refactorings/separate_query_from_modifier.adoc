@@ -1,0 +1,12 @@
+# Separate Query from Modifier
+:source-highlighter: pygments
+:pygments-style: pastie
+:icons: font
+:experimental:
+:toc!:
+
+## Why
+
+## Benefits
+
+## How to Refactor (Ruby Edition)

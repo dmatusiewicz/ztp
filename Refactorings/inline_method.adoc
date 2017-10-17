@@ -5,7 +5,11 @@
 :experimental:
 :toc!:
 
-Mechanics, from _Refactorings_ by J. Fields et al.
+## Why
+
+## Benefits
+
+## How to Refactor (Ruby Edition)
 
 . Check that method is not polymorphic.
 . Find all calls to the method.
