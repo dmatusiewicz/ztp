@@ -3,12 +3,37 @@
 :pygments-style: pastie
 :icons: font
 :experimental:
-:toc!:
+
+[quote, J. Fields et al., Refactoring. Ruby Edition]
+____
+
+Moving methods is the bread and butter of refactoring.
+____
+
+Create a new method with a similar body in the class it uses most. Either turn
+the old method into a simple delegation, or remove it altogether.
+
 
 ## https://refactoring.guru/move-method[Why Refactor]
+
 
 ## https://refactoring.guru/move-method[Benefits]
 
 See _Why Refactor_ above.
 
+
 ## https://refactoring.guru/move-method[How to Refactor?]
+
+. Define the method in the target class.
+. Copy the code from the source method to the target. Adjust the method to make
+  it work in its new home.
+. Determine how to reference the correct target object from the source.
+. Turn the source method into a delegating method.
+. Decide whether to remove the source method or retain it as a delegating method.
+. If you remove the source method, replace all the references with references
+  to the target method.
+
+
+## Example
+
+* link:ex/move_method.rb[move_method.rb]
