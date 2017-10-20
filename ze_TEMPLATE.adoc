@@ -40,9 +40,9 @@ Describe results.
 
 Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
 
-https://refactoring.guru/smells/long-method[Signs and Symptoms]
+https://refactoring.guru/smells/long-method[Signs and Symptoms.]
 
-https://refactoring.guru/smells/long-method[Treatment]
+https://refactoring.guru/smells/long-method[Treatment.]
 
 
 ### Extract Method
@@ -60,12 +60,28 @@ Description.
 
 ### Move Method
 
-Ditto.
+Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
+
+https://refactoring.guru/extract-method[Why Refactor?]
+
+https://refactoring.guru/extract-method[Benefits.]
+
+https://refactoring.guru/smells/long-method[How to Refactor?]
+
+Description.
 
 
 ### Extract Class
 
-Ditto.
+Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
+
+https://refactoring.guru/extract-method[Why Refactor?]
+
+https://refactoring.guru/extract-method[Benefits.]
+
+https://refactoring.guru/smells/long-method[How to Refactor?]
+
+Description.
 
 
 ## UnusedParameters
