@@ -1,4 +1,4 @@
-# Refaktoryzacja gemu https://github.com/halostatue/diff-lcs[diff-lcs]
+# Refaktoryzacja https://github.com/halostatue/diff-lcs[diff-lcs]
 :source-highlighter: pygments
 :pygments-style: pastie
 :icons: font
