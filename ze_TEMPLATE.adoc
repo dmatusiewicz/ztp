@@ -51,7 +51,7 @@ Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
 
 https://refactoring.guru/extract-method[Why Refactor?]
 
-https://refactoring.guru/extract-method[Benefits]
+https://refactoring.guru/extract-method[Benefits.]
 
 https://refactoring.guru/smells/long-method[How to Refactor?]
 
