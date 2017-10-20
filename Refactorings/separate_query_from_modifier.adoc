@@ -1,0 +1,14 @@
+# Separate Query from Modifier
+:source-highlighter: pygments
+:pygments-style: pastie
+:icons: font
+:experimental:
+:toc!:
+
+## https://refactoring.guru/separate-query-from-modifier[Why]
+
+## https://refactoring.guru/separate-query-from-modifier[Benefits]
+
+## https://refactoring.guru/separate-query-from-modifier[Drawbacks]
+
+## https://refactoring.guru/separate-query-from-modifier[How to Refactor]

@@ -8,3 +8,9 @@
 WARNING: Extraneous temporary variables are bad thing:
 they clutter method bodiesm distract the code reader.
 Try to use _Extract Method_ if possible.
+
+## Why
+
+## Benefits
+
+## How to Refactor (Ruby Edition)

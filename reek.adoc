@@ -4,38 +4,38 @@
 |===
 | # ^| Code Smell ^| Refactorings
 
-| 3 | Attribute |
-| 2 | Class Variable |
-|   | Control Couple |
-| 4 | Boolean Parameter |
-| 3 | Control Parameter |
-| 1 | Data Clump |
-| 6 | Duplicate Method Call |
-| 3 | Instance Variable Assumption |
-| 5 | Irresponsible Module |
-|   | Large Class |
-| 1 | Too Many Constants |
-| 2 | Too Many Instance Variables |
-| 2 | Too Many Methods |
-| 3 | Long Parameter List | Introduce Parameter Object, Preserve Whole Object
-| 3 | Feature Envy |
-| 3 | Utility Function |
-|   | Module Initialize |
-| 2 | Nested Iterators |
-|   | Prima-Donna-Method |
-|   | Simulated Polymorphism |
-|   | Manual Dispatch |
-| 2 | Nil Check |
-| 1 | Repeated Conditional |
-|   | Subclassed From Core Class |
-| 7 | _Too Many Statements_ | Extract Method, Replace Temp with Query, Replace Temp with Chain, Replace Method with Method Object, Replace Comment with Method, Decompose Conditional, Replace Loop with Collection Closure Method
+| 10 | Attribute |
+|  3 | Class Variable |
+|  1 | Control Couple |
+| 10 | Boolean Parameter |
+| 10 | Control Parameter |
+|  5 | Data Clump |
+| 54 | Duplicate Method Call |
+| 16 | Feature Envy |
+| 12 | Instance Variable Assumption |
+| 20 | Irresponsible Module |
+|  2 | Large Class |
+|  3 | Too Many Constants |
+|  5 | Too Many Instance Variables |
+|  8 | Too Many Methods |
+| 10 | Long Parameter List | Introduce Parameter Object, Preserve Whole Object
+| 11 | Utility Function |
+|    | Module Initialize |
+| 10 | Nested Iterators |
+|  6 | Prima-Donna-Method |
+|    | Simulated Polymorphism |
+|  7 | Manual Dispatch |
+| 14 | Nil Check |
+|  4 | Repeated Conditional |
+|  1 | Subclassed From Core Class |
+| 30 | _Too Many Statements_ | Extract Method, Replace Temp with Query, Replace Temp with Chain, Replace Method with Method Object, Replace Comment with Method, Decompose Conditional, Replace Loop with Collection Closure Method
 |   | Uncommunicative Name |
-| 1 | Uncommunicative Method Name |
-|   | Uncommunicative Module Name |
-|   | Uncommunicative Parameter Name |
-| 3 | Uncommunicative Variable Name |
-| 2 | Unused Parameters |
-|   | Unused Private Method |
+|  2 | Uncommunicative Method Name |
+|  3 | Uncommunicative Module Name |
+|  4 | Uncommunicative Parameter Name |
+| 34 | Uncommunicative Variable Name |
+|  9 | Unused Parameters |
+|    | Unused Private Method |
 |===
 
 

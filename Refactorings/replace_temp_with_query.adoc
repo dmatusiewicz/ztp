@@ -5,7 +5,11 @@
 :experimental:
 :toc!:
 
-Mechanics, from _Refactorings_ by J. Fields et al.
+## https://refactoring.guru/replace-temp-with-query[Why]
+
+## https://refactoring.guru/replace-temp-with-query[Benefits]
+
+## https://refactoring.guru/replace-temp-with-query[How to Refactor]
 
 . Extract the right-hand side of the assignment into a method.
 . Inline temp on the temp.
