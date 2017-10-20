@@ -1,0 +1,98 @@
+# Refaktoryzacja gemu https://github.com/halostatue/diff-lcs[diff-lcs]
+:source-highlighter: pygments
+:pygments-style: pastie
+:icons: font
+:experimental:
+
+Refaktoryzacja pliku::
+https://github.com/halostatue/diff-lcs/blob/master/lib/diff/lcs/hunk.rb[lib/diff/lcs/hunk.rb]
+(196 linii kodu).
+Kod po refaktoryzacji::
+https://github.com/halostatue/diff-lcs/blob/8c2ddedb066774c8092d0a453e67ed651ad419d6/lib/diff/lcs/hunk.rb[lib/diff/lcs/hunk.rb]
+
+Liczba _code smells_ – 18.
+----
+lib/diff/lcs/hunk.rb -- 18 warnings:
+  [57]:Attribute: Diff::LCS::Hunk#flag_context is a writable attribute
+  [229]:ControlParameter: Diff::LCS::Hunk#context_range is controlled by argument 'mode'
+  [212]:ControlParameter: Diff::LCS::Hunk#ed_diff is controlled by argument 'format'
+  [244]:ControlParameter: Diff::LCS::Hunk#unified_range is controlled by argument 'mode'
+  [185, 198]:NestedIterators: Diff::LCS::Hunk#context_diff contains iterators nested 2 deep
+  [154, 160]:NestedIterators: Diff::LCS::Hunk#unified_diff contains iterators nested 2 deep
+  [60]:NilCheck: Diff::LCS::Hunk#flag_context= performs a nil-check
+  [8]:TooManyInstanceVariables: Diff::LCS::Hunk has at least 9 instance variables
+  [172]:TooManyStatements: Diff::LCS::Hunk#context_diff has approx 23 statements
+  [98]:TooManyStatements: Diff::LCS::Hunk#diff has approx 6 statements
+  [208]:TooManyStatements: Diff::LCS::Hunk#ed_diff has approx 8 statements
+  [59]:TooManyStatements: Diff::LCS::Hunk#flag_context= has approx 9 statements
+  [117]:TooManyStatements: Diff::LCS::Hunk#old_diff has approx 10 statements
+  [136]:TooManyStatements: Diff::LCS::Hunk#unified_diff has approx 16 statements
+  [243]:TooManyStatements: Diff::LCS::Hunk#unified_range has approx 7 statements
+  [266]:UnusedParameters: Diff::LCS::Hunk#encode has unused parameter 'target_encoding'
+  [269]:UnusedParameters: Diff::LCS::Hunk#encode_as has unused parameter 'string'
+  [262]:UtilityFunction: Diff::LCS::Hunk#encode_as doesn't depend on instance state (maybe move it to another class?)
+----
+
+Describe results.
+
+
+## TooManyStatements
+
+Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
+
+https://refactoring.guru/smells/long-method[Signs and Symptoms]
+
+https://refactoring.guru/smells/long-method[Treatment]
+
+
+### Extract Method
+
+Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
+
+https://refactoring.guru/extract-method[Why Refactor?]
+
+https://refactoring.guru/extract-method[Benefits]
+
+https://refactoring.guru/smells/long-method[How to Refactor?]
+
+Description.
+
+
+### Move Method
+
+Ditto.
+
+
+### Extract Class
+
+Ditto.
+
+
+## UnusedParameters
+
+Ditto.
+
+
+## UtilityFunction
+
+Ditto.
+
+
+## NilCheck
+
+Ditto.
+
+
+## TooManyInstanceVariables
+
+Ditto.
+
+
+## ControlParameter
+
+Ditto.
+
+
+## Attribute
+
+Ditto.
