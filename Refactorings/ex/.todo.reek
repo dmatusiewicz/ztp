@@ -1,0 +1,6 @@
+---
+IrresponsibleModule:
+  exclude:
+  - Account
+  - AccountPremium
+  - AccountStandard
