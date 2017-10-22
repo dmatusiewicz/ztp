@@ -32,29 +32,10 @@ from the extracted code.
 Initialize instance variables.
 
 ```ruby
-#
-# [START] Refactoring wrapper
-#
-
-# Create Orders class
-class Orders
-  # Daclare :amount field
-  attr_accessor :amount
-end
-
-# Create a list of objects
-@orders = [Orders.new(), Orders.new()]
-
-# In order to show some output - set amount values for those objects
-@orders.each do |order|
-  order.amount = 1
-end
-
-# Set another missing value in print_owing
-@name = 'Syntetic_Name'
-
-# Call function that we are about to refactor.
-print_owing
+@name = 'Wlodek'
+Order = Struct.new(:amount)
+@orders = []
+@orders << Order.new(10.0) << Order.new(15.0)
 ```
 
 ```ruby
