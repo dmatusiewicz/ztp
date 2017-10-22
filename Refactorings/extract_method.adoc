@@ -29,6 +29,15 @@ from the extracted code.
 
 ## Examples
 
+Initialize instance variables.
+
+```ruby
+@name = 'Wlodek'
+Order = Struct.new(:amount)
+@orders = []
+@orders << Order.new(10.0) << Order.new(15.0)
+```
+
 ```ruby
 def print_owing
   outstanding = 0.0
