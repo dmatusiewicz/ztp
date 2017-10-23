@@ -7,8 +7,6 @@
 Refaktoryzacja pliku::
 https://github.com/halostatue/diff-lcs/blob/master/lib/diff/lcs/hunk.rb[lib/diff/lcs/hunk.rb]
 (196 linii kodu, flog score: 355.0, flay score: 300).
-Kod po refaktoryzacji::
-https://github.com/halostatue/diff-lcs/blob/8c2ddedb066774c8092d0a453e67ed651ad419d6/lib/diff/lcs/hunk.rb[lib/diff/lcs/hunk.rb]
 
 Liczba _code smells_ w oryginalnym pliku – 18.
 ----
@@ -35,6 +33,15 @@ lib/diff/lcs/hunk.rb -- 18 warnings:
 
 Describe results.
 
+Kod po refaktoryzacji::
+https://github.com/halostatue/diff-lcs/blob/8c2ddedb066774c8092d0a453e67ed651ad419d6/lib/diff/lcs/hunk.rb[lib/diff/lcs/hunk.rb]
+
+----
+lib/diff/lcs/hunk.rb -- 18 warnings:
+  [12]:Attribute: Diff::LCS::Hunk#flag is a writable attribute
+  [124]:ControlParameter: Diff::LCS::Hunk#context is controlled by argument 'mode'
+----
+ 
 
 ## TooManyStatements
 
