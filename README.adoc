@@ -18,6 +18,8 @@ and the concepts don't quite fit because our future differs from our past, but
 then we stretch them a little bit.
 ____
 
+## Zaliczenie, grupa 1 – 13.11 (stacjonarne)
+
 ## From Simplicity to Changeability
 
 [quote, S. Metz, Practical Object Oriented Design in Ruby]
