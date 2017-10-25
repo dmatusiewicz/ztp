@@ -193,6 +193,8 @@ problem in the system. The term was first coined by Kent Beck while helping me
 with my Refactoring book.
 ____
 
+{nbsp}
+
 NOTE: *Move Method*, *Extract Class*, *Move Field*, *Extract Method*: probably,
 these refactorings are responsible for fixing the most smells.
 
