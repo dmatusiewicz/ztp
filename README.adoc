@@ -184,14 +184,14 @@ end
 
 ## Code smells ➨ Refactorings
 
+Code smells suggest refactorings.
+
 [quote, Martin Fowler, CodeSmell]
 ____
 A code smell is a surface indication that usually corresponds to a deeper
 problem in the system. The term was first coined by Kent Beck while helping me
 with my Refactoring book.
 ____
-
-Code smells suggest refactorings.
 
 NOTE: *Move Method*, *Extract Class*, *Move Field*, *Extract Method*: probably,
 these refactorings are responsible for fixing the most smells.
