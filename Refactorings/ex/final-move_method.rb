@@ -1,17 +1,3 @@
-class AccountPremium
-  def overdraft_charge(days_overdrawn)
-    result = 10
-    result += (days_overdrawn - 7) * 0.85 if days_overdrawn > 7
-    result
-  end
-end
-
-class AccountStandard
-  def overdraft_charge(days_overdrawn)
-    days_overdrawn * 1.75
-  end
-end
-
 # Move the overdraft_charge method in the AcountPremium class.
 #   Step 1 & 2
 
@@ -30,6 +16,20 @@ class Account
     result = 4.5
     result += overdraft_charge if @days_overdrawn > 0
     result
+  end
+end
+
+class AccountPremium
+  def overdraft_charge(days_overdrawn)
+    result = 10
+    result += (days_overdrawn - 7) * 0.85 if days_overdrawn > 7
+    result
+  end
+end
+
+class AccountStandard
+  def overdraft_charge(days_overdrawn)
+    days_overdrawn * 1.75
   end
 end
 
