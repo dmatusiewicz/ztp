@@ -39,6 +39,8 @@ Literatura
   by Jay Fields, Shane Harvie, and Martin Fowler (with Kent Beck),
   https://martinfowler.com/books/refactoring.html[Java Edition]
   by Martin Fowler (with Kent Beck, John Brant, William Opdyke, and Don Roberts)
+. Gerard Meszaros, _xUnit Test Patterns Refactoring Test Code_, Addison Wesley (2007),
+  http://xunitpatterns.com/Code%20Refactorings.html[Code Refactorings]
 . http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm#format/e[Czysty kod. Podręcznik dobrego programisty] and
   https://www.youtube.com/watch?v=ecIWPzGEbFc[The Future of Programming] (YouTube)
   by Robert C. Martin (Uncle Bob),
@@ -183,6 +185,15 @@ end
 ## Code smells ➨ Refactorings
 
 Code smells suggest refactorings.
+
+[quote, Martin Fowler, CodeSmell]
+____
+A code smell is a surface indication that usually corresponds to a deeper
+problem in the system. The term was first coined by Kent Beck while helping me
+with my Refactoring book.
+____
+
+{nbsp}
 
 NOTE: *Move Method*, *Extract Class*, *Move Field*, *Extract Method*: probably,
 these refactorings are responsible for fixing the most smells.
