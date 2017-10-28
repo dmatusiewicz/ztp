@@ -41,7 +41,7 @@ lib/diff/lcs/hunk.rb -- 18 warnings:
   [12]:Attribute: Diff::LCS::Hunk#flag is a writable attribute
   [124]:ControlParameter: Diff::LCS::Hunk#context is controlled by argument 'mode'
 ----
- 
+
 
 ## TooManyStatements
 
@@ -60,7 +60,7 @@ https://refactoring.guru/extract-method[Why Refactor?]
 
 https://refactoring.guru/extract-method[Benefits.]
 
-https://refactoring.guru/smells/long-method[How to Refactor?]
+hhttps://refactoring.guru/extract-method[How to Refactor?]
 
 Description.
 
@@ -69,11 +69,11 @@ Description.
 
 Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
 
-https://refactoring.guru/extract-method[Why Refactor?]
+https://refactoring.guru/move-method[Why Refactor?]
 
-https://refactoring.guru/extract-method[Benefits.]
+https://refactoring.guru/move-method[Benefits.]
 
-https://refactoring.guru/smells/long-method[How to Refactor?]
+https://refactoring.guru/move-method[How to Refactor?]
 
 Description.
 
@@ -82,11 +82,11 @@ Description.
 
 Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
 
-https://refactoring.guru/extract-method[Why Refactor?]
+https://refactoring.guru/extract-class[Why Refactor?]
 
-https://refactoring.guru/extract-method[Benefits.]
+https://refactoring.guru/extract-class[Benefits.]
 
-https://refactoring.guru/smells/long-method[How to Refactor?]
+https://refactoring.guru/extract-class[How to Refactor?]
 
 Description.
 
