@@ -18,7 +18,7 @@ Inline Temp::
   You have a temp that is assigned to once with a simple expression, and the temp is getting in the way of other refactorings.
   _Replace all references to that temp with the expression._
 Replace Temp with Query::
-  You are using a temporary variable to hold the result of an expression.
+  You are using a temporary variable to hold the result of an expression. +
   _Extract the expression into a method. Replace all references to the temp with the expression. The new method can then be used in other methods._
 
 
