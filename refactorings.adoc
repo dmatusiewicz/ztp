@@ -124,14 +124,38 @@ Encapsulate Collection::
 Replace Record with Data Class::
   You need to interface with a record structure in a traditional programming environment. +
   _Make a dumb data object for the record._
+Replace Type Code with Polymorphism::
+  You have a type code that affects the behavior of a class. +
+  _Replace the type code with classes: one for each type code variant._
+Replace Type Code with Module Extension::
+  You have a type code that affects the behavior of a class. +
+  _Replace the type code with dynamic module extension._
+Replace Type Code with State/Strategy::
+  You have a type code that affects the behavior of a class and the type code changes at runtime. +
+  _Replace the type code with a state object._
+Replace Subclass with Fields::
+  You have subclasses that vary only in methods that return constant data.
+  _Change the methods to superclass fields and eliminate the subclasses._
+Lazily Initialized Attribute::
+  Initialize an attribute on access instead of at construction time.
+Eagerly Initialized Attribute::
+  Initialize an attribute at construction time instead of on the first access.
 
 
+## Simplifying Conditional Expressions
 
-
-
-
-
-
+Decompose Conditional::
+  You have a complicated conditional (if-then-else) statement. +
+  _Extract methods from the condition, “then” part, and “else” parts._
+Recompose Conditional::
+  You have conditional code that is unnecessarily verbose and does not use the most readable Ruby construct. +
+  _Replace the conditional code with the more idiomatic Ruby construct._
+Consolidate Conditional Expression::
+  You have a sequence of conditional tests with the same result. +
+  _Combine them into a single conditional expression and extract it._
+Remove Control Flag::
+  You have a variable that is acting as a control flag for a series of boolean expressions. +
+  _Use a break or return instead._
 
 
 
