@@ -6,6 +6,34 @@
 
 Source: Refactoring – Ruby Edition by Jay Fields et al.
 
+Lista brzydkich zapachów w kodzie: ::
+  Duplicated Code (zduplikowany kod),
+  Long Method (długa metoda),
+  Large Class (duża klasa),
+  Long Parameter List (długa lista parametrów),
+  Divergent Change (rozbieżne zmiany),
+  Shotgun Surgery (fala uderzeniowa),
+  Feature Envy (zazdrosne metody),
+  Data Clumps (stada danych),
+  Primitive Obsession (opętanie prymitywami),
+  Case Statement (instrukcja case),
+  Parallel Inheritance Hierarchies (równoległe hierarchie dziedziczenia),
+  Lazy Class (leniwa klasa),
+  Speculative Generality (spekulacyjne uogólnienia),
+  Temporary Field (pole tymczasowe),
+  Message Chains (łańcuchy komunikatów),
+  Middle Man (pośrednik),
+  Inappriopriate Intimacy (niestosowna bliskość),
+  Alternative Classes with Different Interfaces (alternatywne klasy z różnymi interfejsami),
+  Incomplete Library Class (niekompletna klasa biblioteczna),
+  Data Class (klasa danych),
+  Refused Bequest (odmowa przyjęcia spadku),
+  Comments (komentarze),
+  Metaprogramming Madness (szaleństwo metaprogramowania),
+  Disjointed API (rozłączne API),
+  Repetitive Boilerplate (powtarzający się szablon).
+
+
 ## Composing Methods (Konstrukcja metod)
 
 Extract Method (Ekstrakcja metody)::
