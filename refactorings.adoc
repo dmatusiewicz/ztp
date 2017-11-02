@@ -156,9 +156,21 @@ Consolidate Conditional Expression::
 Remove Control Flag::
   You have a variable that is acting as a control flag for a series of boolean expressions. +
   _Use a break or return instead._
+Replace Nested Conditional with Guard Clauses::
+  A method has conditional behavior that does not make clear the normal path of execution. +
+  _Use guard clauses for all the special cases._
+Replace Conditional with Polymorphism::
+  You have a conditional that chooses different behavior depending on the type of an object. +
+  _Move each leg of the conditional to a method in an object that can be called polymorphically._
+Introduce Null Object::
+  You have repeated checks for a nil value. +
+  _Replace the nil value with a null object._
+Introduce Assertion::
+  A section of code assumes something about the state of the program. +
+  _Make the assumption explicit with an assertion._
 
 
-
+## Making Method Calls Simpler
 
 
 
