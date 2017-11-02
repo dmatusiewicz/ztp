@@ -318,9 +318,14 @@ flog -ad verse.rb # --all --details
 ```
 
 ## Most common smells in the project
+
 Aby oszacować liczbę "zapachów" danego typu w projekcie można posłużyć się komendą:
-```
+```sh
 reek -f json KATALOG | jq .[].wiki_link -r  | sort | uniq -c | sort -n
+```
+Przykład:
+```sh
+reek -f json lib | jq .[].wiki_link -r  | sort | uniq -c | sort -n
 ```
 
 ## Smell of the Week – exercises to try
