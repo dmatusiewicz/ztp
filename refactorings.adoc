@@ -144,48 +144,47 @@ Eagerly Initialized Attribute::
 
 ## Simplifying Conditional Expressions (Upraszczanie wyrażeń warunkowych)
 
-Decompose Conditional::
+Decompose Conditional (Dekompozycja instrukcji warunkowej)::
   You have a complicated conditional (if-then-else) statement. +
   _Extract methods from the condition, “then” part, and “else” parts._
 Recompose Conditional::
   You have conditional code that is unnecessarily verbose and does not use the most readable Ruby construct. +
   _Replace the conditional code with the more idiomatic Ruby construct._
-Consolidate Conditional Expression::
+Consolidate Conditional Expression (Scalenie instrukcji warunkowej)::
   You have a sequence of conditional tests with the same result. +
   _Combine them into a single conditional expression and extract it._
-Remove Control Flag::
+Remove Control Flag (Usunięcie flagi kontrolnej)::
   You have a variable that is acting as a control flag for a series of boolean expressions. +
   _Use a break or return instead._
-Replace Nested Conditional with Guard Clauses::
+Replace Nested Conditional with Guard Clauses (Zastąpienie zagnieżdżonej instrukcji warunkowej instrukcją wyjścia)::
   A method has conditional behavior that does not make clear the normal path of execution. +
   _Use guard clauses for all the special cases._
-Replace Conditional with Polymorphism::
+Replace Conditional with Polymorphism (Zastąpienie instrukcji warunkowej olimorfizmem)::
   You have a conditional that chooses different behavior depending on the type of an object. +
   _Move each leg of the conditional to a method in an object that can be called polymorphically._
-Introduce Null Object::
+Introduce Null Object (Wprowadzenie obiektu pustego)::
   You have repeated checks for a nil value. +
   _Replace the nil value with a null object._
-Introduce Assertion::
+Introduce Assertion (Wprowadzenie asercji)::
   A section of code assumes something about the state of the program. +
   _Make the assumption explicit with an assertion._
 
 
-## Making Method Calls Simpler
+## Making Method Calls Simpler (upraszczanie wywołań metod)
 
-
-Rename Method::
+Rename Method (Zmiana nazwy metody)::
   The name of a method does not reveal its purpose. +
   _Change the name of the method._
-Add Parameter::
+Add Parameter (Dodanie parametru)::
   A method needs more information from its caller. +
   _Add a parameter for an object that can pass on this information._
-Remove Parameter::
+Remove Parameter (Usunięcie parametru)::
   A parameter is no longer used by the method body. +
   _Remove it._
-Separate Query from Modifier::
+Separate Query from Modifier (Rozdzielenie zapytania i modyfikacji)::
   You have a method that returns a value and also changes the state of an object. +
   _Create two methods, one for the query and one for the modification._
-Parameterize Method::
+Parameterize Method (Parametryzacja metody)::
   Several methods do similar things but with different values contained in the method body. +
   _Create one method that uses a parameter for the different values._
 Replace Parameter with Explicit Methods::
