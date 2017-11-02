@@ -1,4 +1,8 @@
-## Table of Refactorings that will address the Code Smells
+## Table of Refactorings that will address Code Smells
+
+Source: _Refactoring in Ruby_ by W. C. Wake & K. Rutherford.
+
+{nbsp}
 
 [quote]
 ____
@@ -89,5 +93,3 @@ ____
 |     | Procedural Code        | Replace Loop with Collection Closure Method, Replace Temp with Chain
 |     | Dynamic Code Creation  | Replace Dynamic Receptor with Dynamic Method Definition, Move Eval from Run-time to Parse-time
 |===
-
-Source: _Refactoring in Ruby_ by W. C. Wake & K. Rutherford.
