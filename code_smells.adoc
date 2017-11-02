@@ -25,7 +25,7 @@ Lista brzydkich zapachów w kodzie: ::
   Comments (komentarze),
   Metaprogramming Madness (szaleństwo metaprogramowania),
   Disjointed API (rozłączne API),
-  Repetitive Boilerplate (powtarzający się kod boilerplate).
+  Repetitive Boilerplate (powtarzający się szablon).
 
 {nbsp}
 
