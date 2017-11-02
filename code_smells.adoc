@@ -27,6 +27,7 @@ Lista brzydkich zapachów w kodzie::
   Disjointed API (rozłączne API),
   Repetitive Boilerplate (powtarzający się kod boilerplate).
 
+{nbsp}
 
 [quote]
 ____
