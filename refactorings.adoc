@@ -187,31 +187,31 @@ Separate Query from Modifier (Rozdzielenie zapytania i modyfikacji)::
 Parameterize Method (Parametryzacja metody)::
   Several methods do similar things but with different values contained in the method body. +
   _Create one method that uses a parameter for the different values._
-Replace Parameter with Explicit Methods::
+Replace Parameter with Explicit Methods (Zastąpienie parametru metodami o różnych nazwach)::
   You have a method that runs different code depending on the values of an enumerated parameter. +
   _Create a separate method for each value of the parameter._
-Preserve Whole Object::
+Preserve Whole Object (Przekazanie całego obiektu)::
   You are getting several values from an object and passing these values as parameters in a method call. +
   _Send the whole object instead._
-Replace Parameter with Method::
+Replace Parameter with Method (Zastąpienie parametru metodą)::
   An object invokes a method, then passes the result as a parameter for a method. The receiver can also invoke this method. +
   _Remove the parameter and let the receiver invoke the method._
-Introduce Parameter Object::
+Introduce Parameter Object (Wprowadzenie obiektu parametrycznego)::
   You have a group of parameters that naturally go together. +
   _Replace them with an object._
-Remove Setting Method::
+Remove Setting Method (Usunięcie metody ustawiającej wartość)::
   A field should be set at creation time and never altered. +
   _Remove any setting method for that field._
-Hide Method::
+Hide Method (Ukrycie metody)::
   A method is not used by any other class. +
   _Make the method private._
-Replace Constructor with Factory Method::
+Replace Constructor with Factory Method (Zastąpienie konstruktora metodą wytwórczą)::
   You want to do more than simple construction when you create an object. +
   _Replace the constructor with a factory method._
-Replace Error Code with Exception::
+Replace Error Code with Exception (Zastąpienie kodu błędu na wyjątek)::
   A method returns a special code to indicate an error. +
   _Raise an exception instead._
-Replace Exception with Test::
+Replace Exception with Test (Zastąpienie wyjątku testem)::
   You are raising an exception on a condition the caller could have checked first. +
   _Change the caller to make the test first._
 Introduce Gateway::
@@ -222,38 +222,38 @@ Introduce Expression Builder::
   _Introduce an Expression Builder and create an interface specific to your application._
 
 
-## Dealing with Generalization
+## Dealing with Generalization (Praca z hierarchią dziedziczenia)
 
-Pull Up Method::
+Pull Up Method (Przesunięcie pola w górę hierarchii)::
   You have methods with identical results on subclasses. +
   _Move them to the superclass._
-Push Down Method::
+Push Down Method (Przesunięcie metody w dół hierarchii)::
   Behavior on a superclass is relevant only for some of its subclasses. +
   _Move it to those subclasses._
-Extract Module::
+Extract Module (Ekstrakcja Modułu)::
   You have duplicated behavior in two or more classes. +
   _Create a new module and move the relevant behavior from the old class into the module, and include the module in the class._
-Inline Module::
+Inline Module (Wchłonięcie modułu)::
   The resultant indirection of the included module is no longer worth the duplication it is preventing. +
   _Merge the module into the including class._
-Extract Subclass::
+Extract Subclass (Ekstrakcja podklasy)::
   A class has features that are used only in some instances. +
   _Create a subclass for that subset of features._
-Introduce Inheritance::
+Introduce Inheritance (Wprowadzenie dziedziczenia)::
   You have two classes with similar features. +
   _Make one of the classes a superclass and move the common features to the superclass._
-Collapse Hierarchy::
+Collapse Hierarchy (Zwinięcie hierarchii)::
   A superclass and subclass (or module and the class that includes the module) are not very different. +
   _Merge them together._
-Form Template Method::
+Form Template Method (Utworzenie metody szablonowej)::
   You have two methods in subclasses that perform similar steps in the same order, yet the steps are different. +
   _Get the steps into methods with the same signature, so that the original methods become the same. Then you can pull them up._
-Replace Inheritance with Delegation::
+Replace Inheritance with Delegation (Zamiana dziedziczenia delegacją)::
   A subclass uses only part of a superclass interface or does not want to inherit data. +
   _Create a field for the superclass, adjust methods to delegate to the superclass, and remove the subclassing._
-Replace Delegation with Hierarchy::
+Replace Delegation with Hierarchy (Zastąpienie delegacji dziedziczeniem)::
   You’re using delegation and are often writing many simple delegations for the entire interface. +
   _Make the delegate a module and include it into the delegating class._
-Replace Abstract Superclass with Module::
+Replace Abstract Superclass with Module (Zastąpienie superklasy abstrakcyjnej modułem)::
   You have an inheritance hierarchy, but never intend to explicitly instantiate an instance of the superclass. +
   _Replace the superclass with a module to better communicate your intention._
