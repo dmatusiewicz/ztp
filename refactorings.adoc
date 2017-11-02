@@ -6,36 +6,36 @@
 
 Source: Refactoring – Ruby Edition by Jay Fields et al.
 
-## Composing Methods
+## Composing Methods (Konstrukcja metod)
 
-Extract Method::
+Extract Method (Ekstrakcja metody)::
   You have a code fragment that can be grouped together. +
   _Turn the fragment into a method whose name explains the purpose of the method._
-Inline Method::
+Inline Method (Wchłonięcie metody)::
   A method's body is just as clear as its name. +
   _Put the method's body into the body of its callers and remove the method._
-Inline Temp::
+Inline Temp (Wchłonięcie zmiennej tymczasowej)::
   You have a temp that is assigned to once with a simple expression, and the temp is getting in the way of other refactorings.
   _Replace all references to that temp with the expression._
-Replace Temp with Query::
+Replace Temp with Query (Zastąpienie zmiennej tymczasoej zapytaniem)::
   You are using a temporary variable to hold the result of an expression. +
   _Extract the expression into a method. Replace all references to the temp with the expression. The new method can then be used in other methods._
 Replace Temp with Chain::
   You are using a temporary variable to hold the result of an expression. +
   _Change the methods to support chaining, thus removing the need for a temp._
-Introduce Explaining Variable::
+Introduce Explaining Variable (Wprowadzenie zmiennej objaśniającej)::
   You have a complicated expression. +
   _Put the result of the expression, or parts of the expression, in a temporary vari- able with a name that explains the purpose._
-Split Temporary Variable::
+Split Temporary Variable (Podział zmiennej tymczzasowej)::
   You have a temporary variable assigned to more than once, but it is not a loop variable nor a collecting temporary variable. +
   _Make a separate temporary variable for each assignment._
-Remove Assignments to Parameters::
+Remove Assignments to Parameters (Eliminacja przypisania wartości parametrom)::
   The code assigns to a parameter. +
   Use a temporary variable instead.
-Replace Method with Method Object::
+Replace Method with Method Object (Zastąpienie metody obiektem)::
   You have a long method that uses local variables in such a way that you cannot apply Extract Method. +
   _Turn the method into its own object so that all the local variables become instance variables on that object. You can then decompose the method into other methods on the same object._
-Substitute Algorithm::
+Substitute Algorithm (Zastąpienie Algorytmu)::
   You want to replace an algorithm with one that is clearer. +
   _Replace the body of the method with the new algorithm._
 Replace Loop with Collection Closure Method::
@@ -72,22 +72,22 @@ Move Eval from Runtime to Parse Time::
 
 ## Moving Features Between Objects
 
-Move Method::
+Move Method (Przeniesienie Metody)::
   A method is, or will be, using or used by more features of another class than the class on which it is defined. +
   _Create a new method with a similar body in the class it uses most. Either turn the old method into a simple delegation, or remove it altogether._
-Move Field::
+Move Field (Przeniesienie pola)::
   A field is, or will be, used by another class more than the class on which it is defined. +
   _Create a new attribute reader (and if necessary, a writer) in the target class, and change all its users._
-Extract Class::
+Extract Class (Ekstrakcja klasy)::
   You have one class doing work that should be done by two. +
   _Create a new class and move the relevant fields and methods from the old class into the new class._
-Inline Class::
+Inline Class (Wchłonięcie klasy)::
   A class isn’t doing very much. +
   _Move all its features into another class and delete it._
-Hide Delegate::
+Hide Delegate (Ukrycie delegata)::
   A client is calling a delegate class of an object. +
   _Create methods on the server to hide the delegate._
-Remove Middle Man::
+Remove Middle Man (Usinięcie pośrednika)::
   A class is doing too much simple delegation. +
   _Get the client to call the delegate directly._
 
