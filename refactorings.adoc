@@ -70,7 +70,7 @@ Move Eval from Runtime to Parse Time::
   _Move the use of eval from within the method definition to defining the method itself._
 
 
-## Moving Features Between Objects
+## Moving Features Between Objects (Przenoszenie składowych między obiektami)
 
 Move Method (Przeniesienie Metody)::
   A method is, or will be, using or used by more features of another class than the class on which it is defined. +
@@ -92,48 +92,48 @@ Remove Middle Man (Usinięcie pośrednika)::
   _Get the client to call the delegate directly._
 
 
-## Organizing Data
+## Organizing Data (Organizacja danych)
 
-Self Encapsulate Field::
+Self Encapsulate Field (Samoenkapsulacja pola)::
   You are accessing a field directly, but the coupling to the field is becoming awkward. +
   _Create getting and setting methods for the field and use only those to access the field._
-Replace Data Value with Object::
+Replace Data Value with Object (Zastąpienie typu prostego obiektem)::
   You have a data item that needs additional data or behavior. +
   _Turn the data item into an object._
-Change Reference to Value::
+Change Reference to Value (Zamiana referencji na wartość)::
   You have a reference object that is small, immutable, and awkward to manage. +
   _Turn it into a value object._
-Replace Array with Object::
+Replace Array with Object (Zastąpienie tablicy obiektem)::
   You have an Array in which certain elements mean different things. +
   _Replace the Array with an object that has a field for each element._
 Replace Hash with Object::
   You have a Hash that stores several different types of objects, and is passed around and used for more than one purpose. +
   _Replace the Hash with an object that has a field for each key._
-Change Unidirectional Association to Bidirectional::
+Change Unidirectional Association to Bidirectional (Zamiana asocjacji jednokierunkowej na dwukierunkową)::
   You have two classes that need to use each other’s features, but there is only a one-way link. +
   _Add back pointers, and change modifiers to update both sets._
-Change Bidirectional Association to Unidirectional::
+Change Bidirectional Association to Unidirectional (Zastąpienie asocjacji dwukierunkowej na jednokierunkową)::
   You have a two-way association but one class no longer needs features from the other. +
   _Drop the unneeded end of the association._
-Replace Magic Number with Symbolic Constant::
+Replace Magic Number with Symbolic Constant (Zastąpienie magicznej liczby stałą syboliczną)::
   You have a literal number with a particular meaning. +
   _Create a constant, name it after the meaning, and replace the number with it._
-Encapsulate Collection::
+Encapsulate Collection (Enkapsulacja kolekcji)::
   A method returns a collection. +
   _Make it return a copy of the collection and provide add/remove methods._
-Replace Record with Data Class::
+Replace Record with Data Class (Zastąpienie rekordu klasą z danymi)::
   You need to interface with a record structure in a traditional programming environment. +
   _Make a dumb data object for the record._
 Replace Type Code with Polymorphism::
   You have a type code that affects the behavior of a class. +
   _Replace the type code with classes: one for each type code variant._
-Replace Type Code with Module Extension::
+Replace Type Code with Module Extension (Zastąpienie typu kodu włączeniem modułu)::
   You have a type code that affects the behavior of a class. +
   _Replace the type code with dynamic module extension._
-Replace Type Code with State/Strategy::
+Replace Type Code with State/Strategy (Zastąpienie kodu typu wzorcem Stan lub Strategia)::
   You have a type code that affects the behavior of a class and the type code changes at runtime. +
   _Replace the type code with a state object._
-Replace Subclass with Fields::
+Replace Subclass with Fields (Zastąpienie podklasy polami)::
   You have subclasses that vary only in methods that return constant data.
   _Change the methods to superclass fields and eliminate the subclasses._
 Lazily Initialized Attribute::
@@ -142,7 +142,7 @@ Eagerly Initialized Attribute::
   Initialize an attribute at construction time instead of on the first access.
 
 
-## Simplifying Conditional Expressions
+## Simplifying Conditional Expressions (Upraszczanie wyrażeń warunkowych)
 
 Decompose Conditional::
   You have a complicated conditional (if-then-else) statement. +
