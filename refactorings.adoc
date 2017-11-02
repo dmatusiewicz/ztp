@@ -1,0 +1,34 @@
+# https://refactoring.com/catalog/[Katalog Refaktoryzacji]
+:source-highlighter: pygments
+:pygments-style: pastie
+:icons: font
+:experimental:
+
+Source: Refactoring – Ruby Edition by Jay Fields et al.
+
+## Composing Methods
+
+Extract Method::
+  You have a code fragment that can be grouped together. +
+  _Turn the fragment into a method whose name explains the purpose of the method._
+Inline Method::
+  A method's body is just as clear as its name. +
+  _Put the method's body into the body of its callers and remove the method._
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## ?
