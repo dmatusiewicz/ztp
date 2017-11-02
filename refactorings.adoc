@@ -249,22 +249,12 @@ Collapse Hierarchy::
 Form Template Method::
   You have two methods in subclasses that perform similar steps in the same order, yet the steps are different. +
   _Get the steps into methods with the same signature, so that the original methods become the same. Then you can pull them up._
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## ?
+Replace Inheritance with Delegation::
+  A subclass uses only part of a superclass interface or does not want to inherit data. +
+  _Create a field for the superclass, adjust methods to delegate to the superclass, and remove the subclassing._
+Replace Delegation with Hierarchy::
+  You’re using delegation and are often writing many simple delegations for the entire interface. +
+  _Make the delegate a module and include it into the delegating class._
+Replace Abstract Superclass with Module::
+  You have an inheritance hierarchy, but never intend to explicitly instantiate an instance of the superclass. +
+  _Replace the superclass with a module to better communicate your intention._
