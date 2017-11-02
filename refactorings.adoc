@@ -225,12 +225,30 @@ Introduce Expression Builder::
 
 ## Dealing with Generalization
 
-
-
-
-
-
-
+Pull Up Method::
+  You have methods with identical results on subclasses. +
+  _Move them to the superclass._
+Push Down Method::
+  Behavior on a superclass is relevant only for some of its subclasses. +
+  _Move it to those subclasses._
+Extract Module::
+  You have duplicated behavior in two or more classes. +
+  _Create a new module and move the relevant behavior from the old class into the module, and include the module in the class._
+Inline Module::
+  The resultant indirection of the included module is no longer worth the duplication it is preventing. +
+  _Merge the module into the including class._
+Extract Subclass::
+  A class has features that are used only in some instances. +
+  _Create a subclass for that subset of features._
+Introduce Inheritance::
+  You have two classes with similar features. +
+  _Make one of the classes a superclass and move the common features to the superclass._
+Collapse Hierarchy::
+  A superclass and subclass (or module and the class that includes the module) are not very different. +
+  _Merge them together._
+Form Template Method::
+  You have two methods in subclasses that perform similar steps in the same order, yet the steps are different. +
+  _Get the steps into methods with the same signature, so that the original methods become the same. Then you can pull them up._
 
 
 
