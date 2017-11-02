@@ -1,6 +1,6 @@
 ## Table of Refactorings that will address the Code Smells
 
-Lista brzydkich zapachów w kodzie::
+Lista brzydkich zapachów w kodzie:::
   Duplicated Code (zduplikowany kod),
   Long Method (długa metoda),
   Large Class (duża klasa),
