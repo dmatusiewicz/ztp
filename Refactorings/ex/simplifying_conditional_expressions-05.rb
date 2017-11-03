@@ -38,7 +38,7 @@ class MountainBike
   end
 
   def price
-    klass = Object.const_get(type_code.to_s.split("_").map(&:capitalize).join + "MountainBike")
+    klass = Object.const_get(type_code.to_s.split("_").map(&:capitalize).join + self.class.name)
     klass.new(type_code, base_price, commission, front_suspension_price, rear_suspension_price).price
   end
 end
@@ -72,7 +72,7 @@ fr_bike.price
 
 # def self.type(code)
 #   begin
-#     Object.const_get(code.to_s.split("_").map(&:capitalize).join + "MountainBike")
+#     Object.const_get(code.to_s.split("_").map(&:capitalize).join + self.class.name)
 #   rescue NameError
 #     # TODO
 #   end.new(code, base_price, commission, front_suspension_price, rear_suspension_price)
