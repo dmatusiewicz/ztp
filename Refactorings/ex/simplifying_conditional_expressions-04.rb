@@ -4,7 +4,10 @@
 class Account
   ADJ_FACTOR = 1.1
   def initialize(capital, income, interest_rate, duration)
-
+    @capital = capital
+    @income = income
+    @interest_rate = interest_rate
+    @duration = duration
   end
 
   def adjusted_capital
