@@ -1,6 +1,6 @@
 # Smell: Simplifying Conditional Expressions
 
-# Refactoring: Consolidate Conditional Expression
+# Refactoring: Replace Nested Conditional with Guard Clauses
 class PZU
   def initialize(seniority, months_disabled, is_part_time)
     @seniority = seniority
@@ -20,7 +20,7 @@ end
 a_pzu = PZU.new 3, 6, false
 a_pzu.disability_amount
 
-# Consolidate Conditional Expression (final?)
+# Replace Nested Conditional with Guard Clauses (final?)
 class PZU
   def initialize(seniority, months_disabled, is_part_time)
     @seniority = seniority
@@ -38,4 +38,4 @@ end
 a_pzu = PZU.new 3, 6, false
 a_pzu.disability_amount
 
-# reek simplifying_conditional_expressions-02.rb
+# reek simplifying_conditional_expressions-01.rb
