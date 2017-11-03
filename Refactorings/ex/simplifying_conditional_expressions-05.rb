@@ -38,14 +38,6 @@ class MountainBike
   end
 
   def price
-    # case type_code
-    # when :rigid
-    #   RigidMountainBike
-    # when :front_suspension
-    #   FrontSuspensionMountainBike
-    # when :full_suspension
-    #   FullSuspensionMountainBike
-    # end.new(type_code, base_price, commission, front_suspension_price, rear_suspension_price).price
     klass = Object.const_get(type_code.to_s.split("_").map(&:capitalize).join + "MountainBike")
     klass.new(type_code, base_price, commission, front_suspension_price, rear_suspension_price).price
   end
@@ -78,6 +70,25 @@ f_bike.price
 fr_bike = MountainBike.new :full_suspension, 1000, 0.1, 400, 600
 fr_bike.price
 
+# def self.type(code)
+#   begin
+#     Object.const_get(code.to_s.split("_").map(&:capitalize).join + "MountainBike")
+#   rescue NameError
+#     # TODO
+#   end.new(code, base_price, commission, front_suspension_price, rear_suspension_price)
+# end
 
+# def price
+#   # case type_code
+#   # when :rigid
+#   #   RigidMountainBike
+#   # when :front_suspension
+#   #   FrontSuspensionMountainBike
+#   # when :full_suspension
+#   #   FullSuspensionMountainBike
+#   # end.new(type_code, base_price, commission, front_suspension_price, rear_suspension_price).price
+#   klass = Object.const_get(type_code.to_s.split("_").map(&:capitalize).join + "MountainBike")
+#   klass.new(type_code, base_price, commission, front_suspension_price, rear_suspension_price).price
+# end
 
 # reek simplifying_conditional_expressions-04.rb
