@@ -1,3 +1,7 @@
+# TODO
+
+=begin
+
 # Smell: Simplifying Conditional Expressions
 
 # Refactoring: Replace Conditional with Polymorphism
@@ -70,6 +74,9 @@ f_bike.price
 fr_bike = MountainBike.new :full_suspension, 1000, 0.1, 400, 600
 fr_bike.price
 
+=end
+
+# ----
 # def self.type(code)
 #   begin
 #     Object.const_get(code.to_s.split("_").map(&:capitalize).join + self.class.name)
@@ -77,7 +84,7 @@ fr_bike.price
 #     # TODO
 #   end.new(code, base_price, commission, front_suspension_price, rear_suspension_price)
 # end
-
+#
 # def price
 #   # case type_code
 #   # when :rigid
@@ -90,5 +97,5 @@ fr_bike.price
 #   klass = Object.const_get(type_code.to_s.split("_").map(&:capitalize).join + "MountainBike")
 #   klass.new(type_code, base_price, commission, front_suspension_price, rear_suspension_price).price
 # end
-
+#
 # reek simplifying_conditional_expressions-04.rb
