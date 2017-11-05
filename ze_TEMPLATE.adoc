@@ -7,8 +7,6 @@
 Refaktoryzacja pliku::
 https://github.com/halostatue/diff-lcs/blob/master/lib/diff/lcs/hunk.rb[lib/diff/lcs/hunk.rb]
 (196 linii kodu, flog score: 355.0, flay score: 300).
-Kod po refaktoryzacji::
-https://github.com/halostatue/diff-lcs/blob/8c2ddedb066774c8092d0a453e67ed651ad419d6/lib/diff/lcs/hunk.rb[lib/diff/lcs/hunk.rb]
 
 Liczba _code smells_ w oryginalnym pliku – 18.
 ----
@@ -35,6 +33,15 @@ lib/diff/lcs/hunk.rb -- 18 warnings:
 
 Describe results.
 
+Kod po refaktoryzacji::
+https://github.com/halostatue/diff-lcs/blob/8c2ddedb066774c8092d0a453e67ed651ad419d6/lib/diff/lcs/hunk.rb[lib/diff/lcs/hunk.rb]
+
+----
+lib/diff/lcs/hunk.rb -- 18 warnings:
+  [12]:Attribute: Diff::LCS::Hunk#flag is a writable attribute
+  [124]:ControlParameter: Diff::LCS::Hunk#context is controlled by argument 'mode'
+----
+
 
 ## TooManyStatements
 
@@ -53,7 +60,7 @@ https://refactoring.guru/extract-method[Why Refactor?]
 
 https://refactoring.guru/extract-method[Benefits.]
 
-https://refactoring.guru/smells/long-method[How to Refactor?]
+hhttps://refactoring.guru/extract-method[How to Refactor?]
 
 Description.
 
@@ -62,11 +69,11 @@ Description.
 
 Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
 
-https://refactoring.guru/extract-method[Why Refactor?]
+https://refactoring.guru/move-method[Why Refactor?]
 
-https://refactoring.guru/extract-method[Benefits.]
+https://refactoring.guru/move-method[Benefits.]
 
-https://refactoring.guru/smells/long-method[How to Refactor?]
+https://refactoring.guru/move-method[How to Refactor?]
 
 Description.
 
@@ -75,11 +82,11 @@ Description.
 
 Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
 
-https://refactoring.guru/extract-method[Why Refactor?]
+https://refactoring.guru/extract-class[Why Refactor?]
 
-https://refactoring.guru/extract-method[Benefits.]
+https://refactoring.guru/extract-class[Benefits.]
 
-https://refactoring.guru/smells/long-method[How to Refactor?]
+https://refactoring.guru/extract-class[How to Refactor?]
 
 Description.
 

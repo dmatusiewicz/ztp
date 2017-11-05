@@ -1,6 +1,6 @@
 ---
 IrresponsibleModule:
   exclude:
-  - Account
-  - AccountPremium
-  - AccountStandard
+  - FrontSuspensionMountainBike
+  - FullSuspensionMountainBike
+  - RigidMountainBike

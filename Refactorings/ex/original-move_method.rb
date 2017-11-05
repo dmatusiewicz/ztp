@@ -1,9 +1,3 @@
-class AccountPremium
-  def premium?
-    true
-  end
-end
-
 class Account
   def initialize(days_overdrawn, account_type)
     @days_overdrawn = days_overdrawn
@@ -24,6 +18,12 @@ class Account
     result = 4.5
     result += overdraft_charge if @days_overdrawn > 0
     result
+  end
+end
+
+class AccountPremium
+  def premium?
+    true
   end
 end
 

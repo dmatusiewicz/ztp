@@ -29,7 +29,7 @@
 |  4 | Repeated Conditional |
 |  1 | Subclassed From Core Class |
 | 30 | _Too Many Statements_ | Extract Method, Replace Temp with Query, Replace Temp with Chain, Replace Method with Method Object, Replace Comment with Method, Decompose Conditional, Replace Loop with Collection Closure Method
-|   | Uncommunicative Name |
+|    | Uncommunicative Name |
 |  2 | Uncommunicative Method Name |
 |  3 | Uncommunicative Module Name |
 |  4 | Uncommunicative Parameter Name |

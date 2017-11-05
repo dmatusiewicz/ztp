@@ -18,6 +18,8 @@ and the concepts don't quite fit because our future differs from our past, but
 then we stretch them a little bit.
 ____
 
+## :new: Zaliczenie, grupa 1 – 13.11 (stacjonarne)
+
 ## From Simplicity to Changeability
 
 [quote, S. Metz, Practical Object Oriented Design in Ruby]
@@ -37,6 +39,8 @@ Literatura
   by Jay Fields, Shane Harvie, and Martin Fowler (with Kent Beck),
   https://martinfowler.com/books/refactoring.html[Java Edition]
   by Martin Fowler (with Kent Beck, John Brant, William Opdyke, and Don Roberts)
+. Gerard Meszaros, _xUnit Test Patterns Refactoring Test Code_, Addison Wesley (2007),
+  http://xunitpatterns.com/Code%20Refactorings.html[Code Refactorings]
 . http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm#format/e[Czysty kod. Podręcznik dobrego programisty] and
   https://www.youtube.com/watch?v=ecIWPzGEbFc[The Future of Programming] (YouTube)
   by Robert C. Martin (Uncle Bob),
@@ -182,6 +186,15 @@ end
 
 Code smells suggest refactorings.
 
+[quote, Martin Fowler, CodeSmell]
+____
+A code smell is a surface indication that usually corresponds to a deeper
+problem in the system. The term was first coined by Kent Beck while helping me
+with my Refactoring book.
+____
+
+{nbsp}
+
 NOTE: *Move Method*, *Extract Class*, *Move Field*, *Extract Method*: probably,
 these refactorings are responsible for fixing the most smells.
 
@@ -305,9 +318,14 @@ flog -ad verse.rb # --all --details
 ```
 
 ## Most common smells in the project
+
 Aby oszacować liczbę "zapachów" danego typu w projekcie można posłużyć się komendą:
-```
+```sh
 reek -f json KATALOG | jq .[].wiki_link -r  | sort | uniq -c | sort -n
+```
+Przykład:
+```sh
+reek -f json lib | jq .[].wiki_link -r  | sort | uniq -c | sort -n
 ```
 
 ## Smell of the Week – exercises to try
