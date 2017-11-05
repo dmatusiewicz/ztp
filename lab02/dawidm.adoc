@@ -1,0 +1,163 @@
+# Refaktoryzacja https://github.com/voxpupuli/hiera-eyaml.git[hiera-eyaml]
+:source-highlighter: pygments
+:pygments-style: pastie
+:icons: font
+:experimental:
+
+# Project source and version:
+* source: https://github.com/voxpupuli/hiera-eyaml.git
+* version (tag): v2.1.0
+
+# Project problems:
+
+```
+reek -f json lib | jq .[].wiki_link -r  | sort | uniq -c | sort -n
+1 https://github.com/troessner/reek/blob/master/docs/Instance-Variable-Assumption.md
+1 https://github.com/troessner/reek/blob/master/docs/Too-Many-Instance-Variables.md
+1 https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Module-Name.md
+1 https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Parameter-Name.md
+2 https://github.com/troessner/reek/blob/master/docs/Utility-Function.md
+3 https://github.com/troessner/reek/blob/master/docs/Nested-Iterators.md
+4 https://github.com/troessner/reek/blob/master/docs/Control-Parameter.md
+4 https://github.com/troessner/reek/blob/master/docs/Feature-Envy.md
+6 https://github.com/troessner/reek/blob/master/docs/Attribute.md
+6 https://github.com/troessner/reek/blob/master/docs/Long-Parameter-List.md
+7 https://github.com/troessner/reek/blob/master/docs/Unused-Parameters.md
+13 https://github.com/troessner/reek/blob/master/docs/Class-Variable.md
+16 https://github.com/troessner/reek/blob/master/docs/Nil-Check.md
+21 https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md
+35 https://github.com/troessner/reek/blob/master/docs/Irresponsible-Module.md
+40 https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md
+57 https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md
+```
+
+
+
+# Refaktoryzacja pliku: **lib/hiera/backend/eyaml/parser/encrypted_tokens.rb**
+```
+diff --git a/lib/hiera/backend/eyaml/parser/encrypted_tokens.rb b/lib/hiera/backend/eyaml/parser/encrypted_tokens.rb
+index 129f41a..fe11b71 100644
+--- a/lib/hiera/backend/eyaml/parser/encrypted_tokens.rb
++++ b/lib/hiera/backend/eyaml/parser/encrypted_tokens.rb
+@@ -3,6 +3,13 @@ require 'hiera/backend/eyaml/utils'
+ require 'hiera/backend/eyaml/encryptor'
+ require 'hiera/backend/eyaml'
+
++class EncTokenUtil
++  indentation = ''
++  def create_enc_token(match, type, enc_comma, cipher)
++    encryption_scheme = enc_comma.nil? ? Eyaml.default_encryption_scheme : enc_comma.split(",").first
++    EncToken.encrypted_value(type, encryption_scheme, cipher, match, indentation)
++  end
++end
+
+ class Hiera
+   module Backend
+@@ -72,10 +79,7 @@ class Hiera
+         end
+
+         class EncTokenType < TokenType
+-          def create_enc_token(match, type, enc_comma, cipher, indentation = '')
+-            encryption_scheme = enc_comma.nil? ? Eyaml.default_encryption_scheme : enc_comma.split(",").first
+-            EncToken.encrypted_value(type, encryption_scheme, cipher, match, indentation)
+-          end
++
+         end
+
+         class EncHieraTokenType < EncTokenType
+@@ -94,7 +98,7 @@ class Hiera
+           end
+           def create_token(string)
+             md = @regex.match(string)
+-            self.create_enc_token(string, :string, md[1], md[2])
++            EncTokenUtil.create_enc_token(string, :string, md[1], md[2])
+           end
+         end
+
+@@ -104,7 +108,7 @@ class Hiera
+           end
+           def create_token(string)
+             md = @regex.match(string)
+-            self.create_enc_token(string, :block, md[2], md[3], md[1])
++            EncTokenUtil.create_enc_token(string, :block, md[2], md[3], md[1])
+           end
+         end
+```
+
+## Describe results.
+### https://github.com/troessner/reek/blob/master/docs/Utility-Function.md
+
+Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
+
+https://refactoring.guru/smells/long-method[Signs and Symptoms.]
+
+https://refactoring.guru/smells/long-method[Treatment.]
+
+
+### Extract Method
+
+Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
+
+https://refactoring.guru/extract-method[Why Refactor?]
+
+https://refactoring.guru/extract-method[Benefits.]
+
+https://refactoring.guru/smells/long-method[How to Refactor?]
+
+Description.
+
+
+### Move Method
+
+Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
+
+https://refactoring.guru/extract-method[Why Refactor?]
+
+https://refactoring.guru/extract-method[Benefits.]
+
+https://refactoring.guru/smells/long-method[How to Refactor?]
+
+Description.
+
+
+### Extract Class
+
+Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
+
+https://refactoring.guru/extract-method[Why Refactor?]
+
+https://refactoring.guru/extract-method[Benefits.]
+
+https://refactoring.guru/smells/long-method[How to Refactor?]
+
+Description.
+
+
+## UnusedParameters
+
+Ditto.
+
+
+## UtilityFunction
+
+Ditto.
+
+
+## NilCheck
+
+Ditto.
+
+
+## TooManyInstanceVariables
+
+Ditto.
+
+
+## ControlParameter
+
+Ditto.
+
+
+## Attribute
+
+Ditto.
