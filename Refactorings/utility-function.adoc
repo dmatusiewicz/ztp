@@ -1,87 +1,206 @@
-# Refaktoryzacja https://github.com/voxpupuli/hiera-eyaml.git[hiera-eyaml]
 :source-highlighter: pygments
 :pygments-style: pastie
 :icons: font
 :experimental:
 
-# Project source and version:
+# Refaktoryzacja https://github.com/voxpupuli/hiera-eyaml.git [hiera-eyaml]
+## Czym jest ta biblioteka ?
+* biblioteka obsługujące szyfrowanie do deszyfrowanie danych w plikach YAML.
+* jest rozszerzeniem funkjonalności modułu jednego bardziej popularnych narzędzi config management "Puppet".
+* Hieradata jest modułem obsługującym hierarhichę danych.
+
+## Przykładowe użycie
+Instalacja gem-a
+```
+#installacja
+gem install hiera-eyaml
+# Dodanie obsługi API Amazon Web Services
+gem install aws-sdk
+# Dodanie pluginu aby wykorzystać enkrypcje KMS
+gem install hiera-eyaml-kms
+```
+
+Konfiguracja EYAML. Przykład:
+```
+---
+encrypt_method: kms
+kms_key_id: '<NAZWA KLUCZA KMS>'
+kms_aws_region: '<REGION KLUCZA KMS>'
+```
+
+Użycie. Przykład:
+```
+eyaml encrypt -s tajne_haslo
+[hiera-eyaml-core] Loaded config from /etc/eyaml/config.yaml
+string: ENC[KMS,AQICAHgxdasdsafdsbP6gG0bmby4QqtqdsafdsfsdhkiG9w0BBwagVzBVAgEAMFAGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMdE2Fm9aMafTP9Rt4AgEQgCOozGESzJ/nD+li7MMTogPWAy1Q6kaqkZ20aqu1X6H3YhW/CA==]
+
+OR
+
+block: >
+    ENC[KMS,AQICAHgxj3Cn83Isdfi74KVc89FdXQtmIchvfiqZbnNTl2bP6gG0bmby4Qqt
+    qVJP/QpX1m1zAAfdsdfsdafsFAGCSqGSIb3DQEH
+    ATAeBglghkgBZQMEAS4wEQQMdE2Fm9aMafTP9Rt4AgEQgCOozGESzJ/nD+li
+    7MMTogPWAy1Q6kaqkZ20aqu1X6H3YhW/CA==]
+```
+
+Wartość można następnie użyć w pliku yaml. Przykład:
+```
+---
+wartosc1: "Wartość nie zaszyfrowana"
+wartosc2: 'ENC[KMS,AQICAHgxj3Cn83Isdfi74KVc89FdXQtmIchvfiqZbnNTl2bP6gG0bmby4Qqt
+    qVJP/QpX1m1zAAfdsdfsdafsFAGCSqGSIb3DQEH
+    ATAeBglghkgBZQMEAS4wEQQMdE2Fm9aMafTP9Rt4AgEQgCOozGESzJ/nD+li
+    7MMTogPWAy1Q6kaqkZ20aqu1X6H3YhW/CA==]'
+
+```
+
+
+## Źródło kodu oraz obecna wersja projektu:
 * source: https://github.com/voxpupuli/hiera-eyaml.git
 * version (tag): v2.1.0
 
-# Project problems:
-
+## Problemy projektu (high level)
 ```
 reek -f json lib | jq .[].wiki_link -r  | sort | uniq -c | sort -n
-1 https://github.com/troessner/reek/blob/master/docs/Instance-Variable-Assumption.md
-1 https://github.com/troessner/reek/blob/master/docs/Too-Many-Instance-Variables.md
-1 https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Module-Name.md
-1 https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Parameter-Name.md
-2 https://github.com/troessner/reek/blob/master/docs/Utility-Function.md
-3 https://github.com/troessner/reek/blob/master/docs/Nested-Iterators.md
-4 https://github.com/troessner/reek/blob/master/docs/Control-Parameter.md
-4 https://github.com/troessner/reek/blob/master/docs/Feature-Envy.md
-6 https://github.com/troessner/reek/blob/master/docs/Attribute.md
-6 https://github.com/troessner/reek/blob/master/docs/Long-Parameter-List.md
-7 https://github.com/troessner/reek/blob/master/docs/Unused-Parameters.md
-13 https://github.com/troessner/reek/blob/master/docs/Class-Variable.md
-16 https://github.com/troessner/reek/blob/master/docs/Nil-Check.md
-21 https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md
-35 https://github.com/troessner/reek/blob/master/docs/Irresponsible-Module.md
-40 https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md
-57 https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md
+(!!) 1 https://github.com/troessner/reek/blob/master/docs/Instance-Variable-Assumption.md
+     1 https://github.com/troessner/reek/blob/master/docs/Too-Many-Instance-Variables.md
+     1 https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Module-Name.md
+     1 https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Parameter-Name.md
+(!!) 2 https://github.com/troessner/reek/blob/master/docs/Utility-Function.md
+     3 https://github.com/troessner/reek/blob/master/docs/Nested-Iterators.md
+     4 https://github.com/troessner/reek/blob/master/docs/Control-Parameter.md
+     4 https://github.com/troessner/reek/blob/master/docs/Feature-Envy.md
+     6 https://github.com/troessner/reek/blob/master/docs/Attribute.md
+     6 https://github.com/troessner/reek/blob/master/docs/Long-Parameter-List.md
+(!!) 7 https://github.com/troessner/reek/blob/master/docs/Unused-Parameters.md
+     13 https://github.com/troessner/reek/blob/master/docs/Class-Variable.md
+(!!) 16 https://github.com/troessner/reek/blob/master/docs/Nil-Check.md
+     21 https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md
+     35 https://github.com/troessner/reek/blob/master/docs/Irresponsible-Module.md
+     40 https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md
+     57 https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md
+```
+
+```
+Angel:hiera-eyaml dawidm$ flog lib/
+  1476.4: flog total
+    12.6: flog/method average
+
+   117.7: Hiera::Backend::Eyaml::Subcommands::Edit::execute lib/hiera/backend/eyaml/subcommands/edit.rb:71-139
+    73.5: Hiera::Backend::Eyaml::EditHelper::find_editor lib/hiera/backend/eyaml/edithelper.rb:8-29
+    71.5: main#none
+    48.9: Hiera::Backend::Eyaml::Subcommand::parse lib/hiera/backend/eyaml/subcommand.rb:84-134
+    48.7: Hiera::Backend::Eyaml::Parser::Parser#parse_scanner lib/hiera/backend/eyaml/parser/parser.rb:39-74
+    45.8: Hiera::Backend::Eyaml::Encryptors::Pkcs7::create_keys lib/hiera/backend/eyaml/encryptors/pkcs7.rb:62-101
+    42.5: Hiera::Backend::Eyaml::Subcommands::Encrypt::execute lib/hiera/backend/eyaml/subcommands/encrypt.rb:71-93
+    41.6: Hiera::Backend::Eyaml::Plugins::find lib/hiera/backend/eyaml/plugins.rb:26-55
+    38.9: Hiera::Backend::Eyaml_backend#lookup lib/hiera/backend/eyaml_backend.rb:23-70
+    38.4: Hiera::Backend::Eyaml::Parser::DecBlockTokenType#create_token lib/hiera/backend/eyaml/parser/encrypted_tokens.rb:164-174
+    34.8: Hiera::Backend::Eyaml::Parser::EncToken#to_decrypted lib/hiera/backend/eyaml/parser/encrypted_tokens.rb:80-96
+    34.5: Hiera::Backend::Eyaml::Parser::EncToken#to_encrypted lib/hiera/backend/eyaml/parser/encrypted_tokens.rb:55-76
+    32.4: Hiera::Backend::Eyaml::Subcommands::Help::execute lib/hiera/backend/eyaml/subcommands/help.rb:19-37
+    29.0: Hiera::Backend::Eyaml::Parser::DecStringTokenType#create_token lib/hiera/backend/eyaml/parser/encrypted_tokens.rb:147-156
+    28.6: Hiera::Backend::Eyaml::Subcommands::Encrypt::validate lib/hiera/backend/eyaml/subcommands/encrypt.rb:48-67
+    27.7: Hiera::Backend::Eyaml::Subcommands::Edit::preamble lib/hiera/backend/eyaml/subcommands/edit.rb:32-51
+    27.7: Hiera::Backend::Eyaml::Options::trace lib/hiera/backend/eyaml/options.rb:23-33
+    25.7: Hiera::Backend::Eyaml::Subcommands::Decrypt::validate lib/hiera/backend/eyaml/subcommands/decrypt.rb:37-53
+    25.2: Hiera::Backend::Eyaml::Utils::require_dir lib/hiera/backend/eyaml/utils.rb:35-41
+    23.5: Hiera::Backend::Eyaml::Subcommands::Recrypt::execute lib/hiera/backend/eyaml/subcommands/recrypt.rb:38-54
+    23.0: Hiera::Backend::Eyaml_backend#parse_answer lib/hiera/backend/eyaml_backend.rb:98-118
+    22.7: Hiera::Backend::Eyaml::LoggingHelper::structure_message lib/hiera/backend/eyaml/logginghelper.rb:9-26
+```
+
+# Refaktoryzacja pliku: **encrypted_tokens.rb**
+Przed refaktoringiem plik: *hiera-eyaml/lib/hiera/backend/eyaml/parser/encrypted_tokens.rb*
+
+```
+class EncTokenType < TokenType
+  def create_enc_token(match, type, enc_comma, cipher, indentation = '')
+    encryption_scheme = enc_comma.nil? ? Eyaml.default_encryption_scheme : enc_comma.split(",").first
+    EncToken.encrypted_value(type, encryption_scheme, cipher, match, indentation)
+  end
+end
+```
+
+Po refaktoringu plik: *hiera-eyaml/lib/hiera/backend/eyaml/utils.rb*
+
+```
+class Utils
+  indentation = ''
+  def create_enc_token(match, type, enc_comma, cipher)
+    encryption_scheme = enc_comma.nil? ? Eyaml.default_encryption_scheme : enc_comma.split(",").first
+    EncToken.encrypted_value(type, encryption_scheme, cipher, match, indentation)
+  end
+end
+```
+
+Wywołanie nowego obiektu:
+
+```
+class EncStringTokenType < EncTokenType
+  def initialize
+    @regex = /ENC\[(\w+,)?([a-zA-Z0-9\+\/=]+?)\]/
+  end
+  def create_token(string)
+    md = @regex.match(string)
+    Utils.create_enc_token(string, :string, md[1], md[2])
+  end
+end
+
+class EncBlockTokenType < EncTokenType
+  def initialize
+    @regex = />\n(\s*)ENC\[(\w+,)?([a-zA-Z0-9\+\/=\s]+?)\]/
+  end
+  def create_token(string)
+    md = @regex.match(string)
+    Utils.create_enc_token(string, :block, md[2], md[3], md[1])
+  end
+end
+```
+
+Wpływ zmiany na skomplikowanie kodu:
+```
+1484.9: flog total
+   12.5: flog/method average
 ```
 
 
+Inne ciekawe https://github.com/troessner/reek/blob/master/docs/Instance-Variable-Assumption.md
 
-# Refaktoryzacja pliku: **lib/hiera/backend/eyaml/parser/encrypted_tokens.rb**
 ```
-diff --git a/lib/hiera/backend/eyaml/parser/encrypted_tokens.rb b/lib/hiera/backend/eyaml/parser/encrypted_tokens.rb
-index 129f41a..fe11b71 100644
---- a/lib/hiera/backend/eyaml/parser/encrypted_tokens.rb
-+++ b/lib/hiera/backend/eyaml/parser/encrypted_tokens.rb
-@@ -3,6 +3,13 @@ require 'hiera/backend/eyaml/utils'
- require 'hiera/backend/eyaml/encryptor'
- require 'hiera/backend/eyaml'
+class Token
+  attr_reader :match
+  def initialize(match)
+    @match = match
+  end
+  def to_encrypted(args={})
+    raise 'Abstract method called'
+  end
+  def to_decrypted(args={})
+    raise 'Abstract method called'
+  end
+  def to_plain_text
+    raise 'Abstract method called'
+  end
+  def to_s
+    "#{self.class.name}:#{@match}"
+  end
+end
 
-+class EncTokenUtil
-+  indentation = ''
-+  def create_enc_token(match, type, enc_comma, cipher)
-+    encryption_scheme = enc_comma.nil? ? Eyaml.default_encryption_scheme : enc_comma.split(",").first
-+    EncToken.encrypted_value(type, encryption_scheme, cipher, match, indentation)
-+  end
-+end
-
- class Hiera
-   module Backend
-@@ -72,10 +79,7 @@ class Hiera
-         end
-
-         class EncTokenType < TokenType
--          def create_enc_token(match, type, enc_comma, cipher, indentation = '')
--            encryption_scheme = enc_comma.nil? ? Eyaml.default_encryption_scheme : enc_comma.split(",").first
--            EncToken.encrypted_value(type, encryption_scheme, cipher, match, indentation)
--          end
-+
-         end
-
-         class EncHieraTokenType < EncTokenType
-@@ -94,7 +98,7 @@ class Hiera
-           end
-           def create_token(string)
-             md = @regex.match(string)
--            self.create_enc_token(string, :string, md[1], md[2])
-+            EncTokenUtil.create_enc_token(string, :string, md[1], md[2])
-           end
-         end
-
-@@ -104,7 +108,7 @@ class Hiera
-           end
-           def create_token(string)
-             md = @regex.match(string)
--            self.create_enc_token(string, :block, md[2], md[3], md[1])
-+            EncTokenUtil.create_enc_token(string, :block, md[2], md[3], md[1])
-           end
-         end
+class NonMatchToken < Token
+  def initialize(non_match)
+    super(non_match)
+  end
+  def to_encrypted(args={})
+    @match
+  end
+  def to_decrypted(args={})
+    @match
+  end
+  def to_plain_text
+    @match
+  end
+end
 ```
 
 ## Describe results.
