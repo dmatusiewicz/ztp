@@ -76,7 +76,7 @@ reek -f json lib | jq .[].wiki_link -r  | sort | uniq -c | sort -n
      13 https://github.com/troessner/reek/blob/master/docs/Class-Variable.md
 (!!) 16 https://github.com/troessner/reek/blob/master/docs/Nil-Check.md
      21 https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md
-     35 https://github.com/troessner/reek/blob/master/docs/Irresponsible-Module.md
+(!!) 35 https://github.com/troessner/reek/blob/master/docs/Irresponsible-Module.md
      40 https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md
      57 https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md
 ```
@@ -165,28 +165,11 @@ Wpływ zmiany na skomplikowanie kodu:
 ```
 
 
-Inne ciekawe https://github.com/troessner/reek/blob/master/docs/Instance-Variable-Assumption.md
+# Ciekawostka odnośnie programu reek: 
+
+https://github.com/troessner/reek/blob/master/docs/Instance-Variable-Assumption.md
 
 ```
-class Token
-  attr_reader :match
-  def initialize(match)
-    @match = match
-  end
-  def to_encrypted(args={})
-    raise 'Abstract method called'
-  end
-  def to_decrypted(args={})
-    raise 'Abstract method called'
-  end
-  def to_plain_text
-    raise 'Abstract method called'
-  end
-  def to_s
-    "#{self.class.name}:#{@match}"
-  end
-end
-
 class NonMatchToken < Token
   def initialize(non_match)
     super(non_match)
@@ -203,80 +186,29 @@ class NonMatchToken < Token
 end
 ```
 
-## Describe results.
-### https://github.com/troessner/reek/blob/master/docs/Utility-Function.md
+Po sprawdzeniu kodu:
+```
+class Token
+  def initialize(match)
+    @match = match
+  end
+  def to_encrypted(args={})
+    raise 'Abstract method called'
+  end
+  def to_decrypted(args={})
+    raise 'Abstract method called'
+  end
+  def to_plain_text
+    raise 'Abstract method called'
+  end
+  def to_s
+    "#{self.class.name}:#{@match}"
+  end
+  private
+  attr_reader :match
+end
+```
 
-Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
-
-https://refactoring.guru/smells/long-method[Signs and Symptoms.]
-
-https://refactoring.guru/smells/long-method[Treatment.]
-
-
-### Extract Method
-
-Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
-
-https://refactoring.guru/extract-method[Why Refactor?]
-
-https://refactoring.guru/extract-method[Benefits.]
-
-https://refactoring.guru/smells/long-method[How to Refactor?]
-
-Description.
-
-
-### Move Method
-
-Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
-
-https://refactoring.guru/extract-method[Why Refactor?]
-
-https://refactoring.guru/extract-method[Benefits.]
-
-https://refactoring.guru/smells/long-method[How to Refactor?]
-
-Description.
-
-
-### Extract Class
-
-Kod po refaktoryzacji:: [lib/diff/lcs/hunk.rb]
-
-https://refactoring.guru/extract-method[Why Refactor?]
-
-https://refactoring.guru/extract-method[Benefits.]
-
-https://refactoring.guru/smells/long-method[How to Refactor?]
-
-Description.
-
-
-## UnusedParameters
-
-Ditto.
-
-
-## UtilityFunction
-
-Ditto.
-
-
-## NilCheck
-
-Ditto.
-
-
-## TooManyInstanceVariables
-
-Ditto.
-
-
-## ControlParameter
-
-Ditto.
-
-
-## Attribute
-
-Ditto.
+# Wnioski:
+- statyczna analiza kodu nie zwalania nas z obowiązku rozumienia kodu aplikacji - ślepa refaktoryzacja może spowodować więcej szkód niż zysku.
+- izolacja i refaktoring jednego pliku w świecie obiektowym nie należy do najprostszych zadań.
