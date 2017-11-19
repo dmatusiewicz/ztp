@@ -165,7 +165,7 @@ Wpływ zmiany na skomplikowanie kodu:
 ```
 
 
-# Ciekawostka odnośnie programu reek: 
+# Ciekawostka odnośnie programu reek:
 
 https://github.com/troessner/reek/blob/master/docs/Instance-Variable-Assumption.md
 
@@ -212,3 +212,18 @@ end
 # Wnioski:
 - statyczna analiza kodu nie zwalania nas z obowiązku rozumienia kodu aplikacji - ślepa refaktoryzacja może spowodować więcej szkód niż zysku.
 - izolacja i refaktoring jednego pliku w świecie obiektowym nie należy do najprostszych zadań.
+
+# Testy:
+- Po refactoringu
+```
+69 scenarios (65 failed, 4 passed)
+341 steps (65 failed, 137 skipped, 139 passed)
+0m30.933s
+```
+
+- Przed refactoringiem
+```
+69 scenarios (52 failed, 17 passed)
+341 steps (52 failed, 111 skipped, 178 passed)
+0m46.286s
+```
